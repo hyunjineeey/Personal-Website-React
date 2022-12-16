@@ -12,7 +12,7 @@ import Button from '@mui/material/Button'
 import Tooltip from '@mui/material/Tooltip'
 import MenuItem from '@mui/material/MenuItem'
 
-const pages = ['About', 'Projects', 'Testimonials', 'Blog', 'FAQ']
+const pages = ['About', 'Blog', 'Testimonials', 'FAQ']
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout']
 
 function TopAppBar () {
@@ -108,7 +108,7 @@ function TopAppBar () {
               textDecoration: 'none'
             }}
           >
-            Hyunjin Jae
+            Hyunjin
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (

@@ -4,7 +4,6 @@ import IconButton from '@mui/material/IconButton'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import YouTubeIcon from '@mui/icons-material/YouTube'
 import { Typography } from '@mui/material'
-import '@fontsource/roboto/700.css'
 
 import TopAppBar from './TopAppBar'
 import MainAvatar from './MainAvatar'
@@ -17,11 +16,12 @@ function Main () {
         display='flex'
         alignItems='center'
         justifyContent='center'
-        sx={{ p: 2, m: 2, flexDirection: 'column' }}
+        sx={{ p: 2, m: 2, flexDirection: 'column', border: '1px solid' }}
       >
         <MainAvatar />
         <Typography
           sx={{
+            m: 2,
             fontSize: '30px',
             letterSpacing: '3px',
             color: '#4b7dc4'
@@ -29,7 +29,7 @@ function Main () {
         >
           Hyunjin Jae
         </Typography>
-        <Typography>Software Engineer at Sentera</Typography>
+        <Typography>Frontend Engineer at Sentera</Typography>
         <Typography>Living in Minneapolis, Minnesota</Typography>
         <Typography>Born and Raised in Seoul, South Korea</Typography>
         <Box
@@ -37,12 +37,12 @@ function Main () {
           alignItems='center'
           justifyContent='center'
           gap={1}
-          sx={{ p: 2, m: 2 }}
+          sx={{ mt: 3 }}
         >
-          <Button variant='outlined' href='#outlined-buttons'>
+          <Button variant='outlined' href='https://github.com/hyunjineeey' target='_blank'>
             Github
           </Button>
-          <Button variant='outlined' href='#outlined-buttons'>
+          <Button variant='outlined' href='mailto:hyunjineeey@gmail.com'>
             Email
           </Button>
         </Box>
@@ -50,24 +50,15 @@ function Main () {
           display='flex'
           alignItems='center'
           justifyContent='center'
-          gap={1}
-          sx={{ p: 2, m: 2 }}
-        ><IconButton color='primary' aria-label='delete'>
+          sx={{ p: 2 }}
+        ><IconButton color='primary' href='https://www.linkedin.com/in/hyunjineeey/' target='_blank'>
           <LinkedInIcon />
         </IconButton>
-        <IconButton color='error' aria-label='delete'>
-          <YouTubeIcon />
-        </IconButton>
+          <IconButton color='error' href='https://www.youtube.com/@hyunjineeey' target='_blank'>
+            <YouTubeIcon />
+          </IconButton>
         </Box>
       </Box>
-      <a
-        className='App-link'
-        href='https://reactjs.org'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        Learn React
-      </a>
     </div>
   )
 }
