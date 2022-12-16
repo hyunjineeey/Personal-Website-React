@@ -16,7 +16,7 @@ function Main () {
         display='flex'
         alignItems='center'
         justifyContent='center'
-        sx={{ p: 2, m: 2, flexDirection: 'column', border: '1px solid' }}
+        sx={{ p: 2, m: 2, flexDirection: 'column' }}
       >
         <MainAvatar />
         <Typography
@@ -42,7 +42,7 @@ function Main () {
           <Button variant='outlined' href='https://github.com/hyunjineeey' target='_blank'>
             Github
           </Button>
-          <Button variant='outlined'>
+          <Button variant='outlined' href='mailto:hyunjineeey@gmail.com'>
             Email
           </Button>
         </Box>
@@ -51,13 +51,25 @@ function Main () {
           alignItems='center'
           justifyContent='center'
           sx={{ p: 2 }}
-        ><IconButton color='primary' href='https://www.linkedin.com/in/hyunjineeey/' target='_blank'>
-          <LinkedInIcon />
-        </IconButton>
+        >
+          <IconButton color='primary' href='https://www.linkedin.com/in/hyunjineeey/' target='_blank'>
+            <LinkedInIcon />
+          </IconButton>
           <IconButton color='error' href='https://www.youtube.com/@hyunjineeey' target='_blank'>
             <YouTubeIcon />
           </IconButton>
         </Box>
+      </Box>
+      <Box>
+        <hr
+          style={{
+            marginTop: '-20px',
+            color: 'grey',
+            border: '0.2px solid'
+          }}
+        />
+
+        <Typography>© Hyunjin Jae, 2019 - 2023</Typography>
       </Box>
     </div>
   )
