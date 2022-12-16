@@ -42,7 +42,7 @@ function Main () {
           <Button variant='outlined' href='https://github.com/hyunjineeey' target='_blank'>
             Github
           </Button>
-          <Button variant='outlined' href='mailto:hyunjineeey@gmail.com'>
+          <Button variant='outlined'>
             Email
           </Button>
         </Box>
