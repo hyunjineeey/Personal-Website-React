@@ -8,7 +8,7 @@ import { Typography } from '@mui/material'
 import TopAppBar from './TopAppBar'
 import MainAvatar from './MainAvatar'
 
-function Main () {
+function Main() {
   return (
     <div>
       <TopAppBar />
