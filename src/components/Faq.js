@@ -1,8 +1,10 @@
 import React from 'react'
 
+import Accordion from './FaqAccordion'
+
 const Faq = () => {
   return (
-    <div className='App'>Faq</div>
+    <Accordion />
   )
 }
 
