@@ -29,7 +29,7 @@ function Main () {
           Hyunjin Jae
         </Typography>
         <Typography>Frontend Engineer at Sentera</Typography>
-        <Typography>Living in Minneapolis, Minnesota</Typography>
+        <Typography>Living in St Paul, Minnesota</Typography>
         <Typography>Born and Raised in Seoul, South Korea</Typography>
         <Box
           display='flex'

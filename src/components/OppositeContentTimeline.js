@@ -14,10 +14,23 @@ export default function OppositeContentTimeline () {
     <Timeline>
       <TimelineItem>
         <TimelineOppositeContent color='text.secondary'>
+          Jan 2023 - Present
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot variant='filled' color='error' />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Link href='https://sentera.com/' underline='none' target='_blank' rel='noreferrer'>Sentera</Link>
+          <br />Software Engineer
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent color='text.secondary'>
           Oct 2021 - Dec 2022
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot variant='outlined' color='primary' />
+          <TimelineDot variant='outlined' />
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
@@ -37,7 +50,7 @@ export default function OppositeContentTimeline () {
         </TimelineSeparator>
         <TimelineContent>
           <Link href='https://cse.umn.edu/college/computer-science' underline='none' target='_blank' rel='noreferrer'>University of Minnesota</Link>
-          <br />Bachelor of Science in Computer Science
+          <br />Computer Science
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
