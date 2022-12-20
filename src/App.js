@@ -10,7 +10,7 @@ import Faq from './components/Faq'
 
 function App () {
   return (
-    <div>
+    <div className='App'>
       <TopAppBar />
       <Routes>
         <Route path='/' element={<Main />} />
