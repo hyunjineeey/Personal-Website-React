@@ -6,6 +6,7 @@ import SearchIcon from '@mui/icons-material/Search'
 
 import OppositeContentTimeline from './OppositeContentTimeline'
 import RowAndColumnSpacing from './RowAndColumnSpacing'
+import Footer from './Footer'
 
 const About = () => {
   return (
@@ -38,6 +39,7 @@ const About = () => {
         </Typography>
         <RowAndColumnSpacing />
       </Box>
+      <Footer />
     </Box>
   )
 }
