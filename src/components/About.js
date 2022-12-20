@@ -3,8 +3,10 @@ import Box from '@mui/material/Box'
 import { Typography } from '@mui/material'
 import Button from '@mui/material/Button'
 import SearchIcon from '@mui/icons-material/Search'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import OppositeContentTimeline from './OppositeContentTimeline'
+import RowAndColumnSpacing from './RowAndColumnSpacing'
 
 const About = () => {
   return (
@@ -35,6 +37,7 @@ const About = () => {
         >
           Skills
         </Typography>
+        <RowAndColumnSpacing />
       </Box>
     </Box>
   )

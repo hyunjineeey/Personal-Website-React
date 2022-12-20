@@ -7,8 +7,7 @@ import TimelineContent from '@mui/lab/TimelineContent'
 import TimelineDot from '@mui/lab/TimelineDot'
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent'
 import Link from '@mui/material/Link'
-import SchoolIcon from '@mui/icons-material/School'
-import LaptopMacIcon from '@mui/icons-material/LaptopMac'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function OppositeContentTimeline () {
   return (
@@ -31,8 +30,8 @@ export default function OppositeContentTimeline () {
           Graduated Dec 2020
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot color='info'>
-            <SchoolIcon />
+          <TimelineDot color='warning'>
+            <FontAwesomeIcon icon="fa-solid fa-graduation-cap" />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -46,8 +45,8 @@ export default function OppositeContentTimeline () {
           Completed Oct 2020
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot>
-            <LaptopMacIcon />
+          <TimelineDot color='success'>
+            <FontAwesomeIcon icon="fa-brands fa-free-code-camp" />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -100,8 +99,8 @@ export default function OppositeContentTimeline () {
           Completed July 2019
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot>
-            <LaptopMacIcon />
+          <TimelineDot color='success'>
+            <FontAwesomeIcon icon="fa-brands fa-free-code-camp" />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
