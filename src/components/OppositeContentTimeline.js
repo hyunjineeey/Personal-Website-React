@@ -31,7 +31,7 @@ export default function OppositeContentTimeline () {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color='warning'>
-            <FontAwesomeIcon icon="fa-solid fa-graduation-cap" />
+            <FontAwesomeIcon icon='fa-solid fa-graduation-cap' />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -46,7 +46,7 @@ export default function OppositeContentTimeline () {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color='success'>
-            <FontAwesomeIcon icon="fa-brands fa-free-code-camp" />
+            <FontAwesomeIcon icon='fa-brands fa-free-code-camp' />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -100,7 +100,7 @@ export default function OppositeContentTimeline () {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color='success'>
-            <FontAwesomeIcon icon="fa-brands fa-free-code-camp" />
+            <FontAwesomeIcon icon='fa-brands fa-free-code-camp' />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
