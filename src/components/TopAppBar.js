@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom'
 
 import '/node_modules/flag-icons/css/flag-icons.min.css'
 
-const pages = ['About', 'Blog', 'Testimonials', 'FAQ']
+const pages = ['About', 'Project', 'Blog', 'Testimonials', 'FAQ']
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout']
 
 function TopAppBar () {
