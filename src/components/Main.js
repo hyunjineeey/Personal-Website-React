@@ -4,6 +4,7 @@ import IconButton from '@mui/material/IconButton'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import YouTubeIcon from '@mui/icons-material/YouTube'
 import { Typography } from '@mui/material'
+import Divider from '@mui/material/Divider'
 
 import MainAvatar from './MainAvatar'
 
@@ -14,7 +15,7 @@ function Main () {
         display='flex'
         alignItems='center'
         justifyContent='center'
-        sx={{ p: 2, m: 2, flexDirection: 'column' }}
+        sx={{ p: 2, mt: 2, flexDirection: 'column' }}
       >
         <MainAvatar />
         <Typography
@@ -48,7 +49,7 @@ function Main () {
           display='flex'
           alignItems='center'
           justifyContent='center'
-          sx={{ p: 2 }}
+          sx={{ pt: 2 }}
         >
           <IconButton color='primary' href='https://www.linkedin.com/in/hyunjineeey/' target='_blank'>
             <LinkedInIcon />
@@ -59,13 +60,7 @@ function Main () {
         </Box>
       </Box>
       <Box>
-        <hr
-          style={{
-            marginTop: '-20px',
-            color: 'grey',
-            border: '0.2px solid'
-          }}
-        />
+        <Divider sx={{ borderBottomWidth: 1, mb: 1 }} />
 
         <Typography sx={{ textAlign: 'center' }}>© Hyunjin Jae, 2019 - 2023</Typography>
       </Box>
