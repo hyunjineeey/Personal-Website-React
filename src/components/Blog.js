@@ -1,8 +1,15 @@
 import React from 'react'
+import Box from '@mui/material/Box'
+
+import BlogList from './BlogList'
+import Footer from './Footer'
 
 const Blog = () => {
   return (
-    <div className='App'>Blog</div>
+    <Box sx={{ textAlign: 'center' }}>
+      <BlogList />
+      <Footer />
+    </Box>
   )
 }
 
