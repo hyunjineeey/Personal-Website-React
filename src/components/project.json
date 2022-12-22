@@ -1,0 +1,43 @@
+{
+  "foodTruckFinder": {
+    "title": "Food Truck Finder",
+    "sub": "A command line interface that prints out a list of food trucks in San Francisco that are open at the current date and current time, when the program is being run."
+  },
+  "covid19": {
+    "title": "Covid-19 Testing Application",
+    "sub": "A web application that helps people who want to register for covid-19 test. Users can find a test location, select a time, make an appointment, and check their results. They also can manage(add/edit/delete) their profile info and appointments."
+  },
+  "syntheticMonitoring": {
+    "title": "Synthetic Monitoring",
+    "sub": "This synthetic monitor performs as a canary for any problems that may arise in the production environment. It measures the time of the process starting with an API call and ending with event delivery."
+  },
+  "multithreadedMapReduce": {
+    "title": "Multithreaded MapReduce",
+    "sub": "The program contains a master thread, one producer thread and number of consumers as an argument. The producer and consumers will share a queue for data transferring. To synchronize the threads, mutex locks and condition signals were used around global variables."
+  },
+  "socketProgramming": {
+    "title": "Socket Programming",
+    "sub": "Connect two nodes (server and client) on a network to communicate with each other. Server listens on a particular IP address and port number, while clients reaches out to the server to build a connection. The purpose of this program is to implement word count application using the socket programming."
+  },
+  "chatServer": {
+    "title": "Chat Server",
+    "sub": "A chat server that allows multiple users to (text) chat with each other over the internet."
+  },
+  "personalWebsite": {
+    "title": "Personal Website",
+    "sub": "Created/designed it by myself and it has all about me."
+  },
+  "eventFilter": {
+    "title": "Event Filter",
+    "sub": "A website that you can filter an event that contains a word you typed. I usually used php to find the event and display it to the client."
+  },
+  "userControlSystem": {
+    "title": "User Control System",
+    "sub": "A website that you can login and add your schedule to database and control(add, edit, delete) your user id."
+  },
+  "documentSimilarity": {
+    "title": "Document Similarity",
+    "sub": "This project is based on the idea of document similarity, which is a first step in many 'big data' applications such as improving search, automated document classification, automated document summary, authorship attribution, and plagiarism detection."
+  }
+}
+
