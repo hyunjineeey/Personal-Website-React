@@ -7,7 +7,7 @@ import SearchIcon from '@mui/icons-material/Search'
 
 import OppositeContentTimeline from './OppositeContentTimeline'
 import RowAndColumnSpacing from './RowAndColumnSpacing'
-import Interests from './Interests'
+// import Interests from './Interests'
 import Footer from './Footer'
 
 const useStyles = makeStyles({
