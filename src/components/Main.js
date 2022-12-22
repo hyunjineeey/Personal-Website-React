@@ -23,7 +23,8 @@ function Main () {
             m: 2,
             fontSize: '30px',
             letterSpacing: '3px',
-            color: '#4b7dc4'
+            color: '#4b7dc4',
+            fontWeight: 'bold'
           }}
         >
           Hyunjin Jae

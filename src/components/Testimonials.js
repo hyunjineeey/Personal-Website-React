@@ -6,7 +6,7 @@ import Footer from './Footer'
 
 const Testimonials = () => {
   return (
-    <Box sx={{ m: 2, textAlign: 'center' }}>
+    <Box sx={{ textAlign: 'center' }}>
       <TestimonialsList />
       <Footer />
     </Box>

@@ -6,9 +6,6 @@ import Container from '@material-ui/core/Container'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    padding: theme.spacing(0)
-  },
   card: {
     height: '100%',
     width: '100%',
@@ -23,9 +20,6 @@ const useStyles = makeStyles(theme => ({
     fontSize: '40px',
     padding: theme.spacing(2, 0)
   },
-  title: {
-    padding: theme.spacing(2)
-  },
   featureList: {
     padding: theme.spacing(1)
   }
@@ -35,12 +29,12 @@ const Interests = () => {
   const classes = useStyles()
 
   return (
-    <Container component='section' maxWidth='lg' className={classes.root}>
+    <Container component='section' maxWidth='lg'>
       <Grid container spacing={3} alignItems='stretch'>
         <Grid item xs={12} sm={4}>
           <div className={classes.card}>
             <FontAwesomeIcon className={classes.icon} icon='fa-solid fa-book' color='#bb382a' />
-            <Typography variant='h5' component='h3' className={classes.title}>
+            <Typography variant='h5' component='h3'>
               Reading / Writing
             </Typography>
             <Typography className={classes.featureList}>
@@ -51,7 +45,7 @@ const Interests = () => {
         <Grid item xs={12} sm={4}>
           <div className={classes.card}>
             <FontAwesomeIcon className={classes.icon} icon='fa-solid fa-camera-retro' color='#3bb665' />
-            <Typography variant='h5' component='h3' className={classes.title}>
+            <Typography variant='h5' component='h3' >
               Making a video
             </Typography>
             <Typography className={classes.featureList}>
@@ -62,7 +56,7 @@ const Interests = () => {
         <Grid item xs={12} sm={4}>
           <div className={classes.card}>
             <FontAwesomeIcon className={classes.icon} icon='fa-solid fa-bolt' color='#f3b73b' />
-            <Typography variant='h5' component='h3' className={classes.title}>
+            <Typography variant='h5' component='h3' >
               Explore new things
             </Typography>
             <Typography className={classes.featureList}>
