@@ -2,8 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import {
   createMuiTheme,
   responsiveFontSizes,
-  MuiThemeProvider,
-  Typography
+  MuiThemeProvider
 } from '@material-ui/core'
 
 import './App.css'
@@ -21,14 +20,14 @@ function App () {
   return (
     <div className='App'>
       <MuiThemeProvider theme={theme}>
-      <TopAppBar />
-      <Routes>
-        <Route path='/' element={<Main />} />
-        <Route path='About' element={<About />} />
-        <Route path='Blog' element={<Blog />} />
-        <Route path='Testimonials' element={<Testimonials />} />
-        <Route path='Faq' element={<Faq />} />
-      </Routes>
+        <TopAppBar />
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='About' element={<About />} />
+          <Route path='Blog' element={<Blog />} />
+          <Route path='Testimonials' element={<Testimonials />} />
+          <Route path='Faq' element={<Faq />} />
+        </Routes>
       </MuiThemeProvider>
     </div>
   )

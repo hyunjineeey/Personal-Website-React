@@ -31,8 +31,8 @@ const About = () => {
       <Button variant='outlined' href='../resume.pdf' startIcon={<SearchIcon />}>
         Resume
       </Button>
-      <Box sx={{ m: 6 }} >
-      <Typography sx={{ mb: 4, fontWeight: 'bold' }} className={classes.title} >
+      <Box sx={{ m: 6 }}>
+        <Typography sx={{ mb: 4, fontWeight: 'bold' }} className={classes.title}>
           Skills
         </Typography>
         <RowAndColumnSpacing />

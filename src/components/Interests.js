@@ -45,7 +45,7 @@ const Interests = () => {
         <Grid item xs={12} sm={4}>
           <div className={classes.card}>
             <FontAwesomeIcon className={classes.icon} icon='fa-solid fa-camera-retro' color='#3bb665' />
-            <Typography variant='h5' component='h3' >
+            <Typography variant='h5' component='h3'>
               Making a video
             </Typography>
             <Typography className={classes.featureList}>
@@ -56,7 +56,7 @@ const Interests = () => {
         <Grid item xs={12} sm={4}>
           <div className={classes.card}>
             <FontAwesomeIcon className={classes.icon} icon='fa-solid fa-bolt' color='#f3b73b' />
-            <Typography variant='h5' component='h3' >
+            <Typography variant='h5' component='h3'>
               Explore new things
             </Typography>
             <Typography className={classes.featureList}>
