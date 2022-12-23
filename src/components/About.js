@@ -23,7 +23,7 @@ const About = () => {
   const classes = useStyles()
 
   return (
-    <Box sx={{ m: 2, textAlign: 'center' }}>
+    <Box sx={{ textAlign: 'center' }}>
       <Typography className={classes.title} sx={{ fontWeight: 'bold' }}>
         Experience / Education
       </Typography>

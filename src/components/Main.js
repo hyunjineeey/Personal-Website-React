@@ -15,7 +15,7 @@ const SnsButton = ({ link, color, icon, name }) => {
   return (
     <Button href={link} sx={{ width: 85 }} target='_blank' variant='outlined' color={color} size='small'>
       <FontAwesomeIcon icon={icon} />
-      <Typography sx={{ ml: 1, fontSize: '12px', textTransform: 'capitalize' }}>{name}</Typography>
+      <Typography sx={{ ml: 1, fontSize: '13px', textTransform: 'capitalize' }}>{name}</Typography>
     </Button>
   )
 }
@@ -68,9 +68,8 @@ function Main () {
         />
       </Box>
       <Box>
-        <Divider sx={{ borderBottomWidth: 1, mb: 1 }} />
-
-        <Typography sx={{ textAlign: 'center' }}>© Hyunjin Jae, 2019 - 2023</Typography>
+        <Divider sx={{ borderBottomWidth: 1, mb: 0.2 }} />
+        <Typography sx={{ textAlign: 'center', fontSize: '12px' }}>© Hyunjin Jae, 2019 - 2023</Typography>
       </Box>
     </div>
   )
