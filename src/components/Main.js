@@ -1,29 +1,26 @@
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
-import ButtonGroup from '@mui/material/ButtonGroup'
-import IconButton from '@mui/material/IconButton'
 import { Typography } from '@mui/material'
-import { makeStyles } from '@material-ui/core/styles'
 import Divider from '@mui/material/Divider'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import MainAvatar from './MainAvatar'
-
-const useStyles = makeStyles({
-  circleIcon: {
-    backgroundColor: '#ffc0c0',
-    padding: '10px',
-    borderRadius: '50%'
-  }
-})
 
 const email = 'mailto:hyunjineeey@gmail.com'
 const github = 'https://github.com/hyunjineeey'
 const linkedIn = 'https://www.linkedin.com/in/hyunjineeey/'
 const youtube = 'https://www.youtube.com/@hyunjineeey'
 
+const SnsButton = ({ link, color, icon, name }) => {
+  return (
+    <Button href={link} sx={{ width: 85 }} target='_blank' variant='outlined' color={color} size='small'>
+      <FontAwesomeIcon icon={icon} />
+      <Typography sx={{ ml: 1, fontSize: '12px', textTransform: 'capitalize' }}>{name}</Typography>
+    </Button>
+  )
+}
+
 function Main () {
-  const classes = useStyles()
   return (
     <div>
       <Box
@@ -52,16 +49,16 @@ function Main () {
           gap={1}
           sx={{ mt: 3 }}
         >
-          <Button href={email} sx={{ width: 100 }} target='_blank' variant='outlined' color='warning' size='small'><FontAwesomeIcon icon='fa-solid fa-envelope' />Email</Button>
-          <Button href={github} sx={{ width: 100 }} target='_blank' variant='outlined' color='success' size='small'><FontAwesomeIcon icon='fa-brands fa-github' />Github</Button>
+          <SnsButton link={email} color='warning' icon='fa-solid fa-envelope' name='Email' />
+          <SnsButton link={github} color='success' icon='fa-brands fa-github' name='Github' />
         </Box>
         <Box
           display='flex'
           gap={1}
           sx={{ mt: 1 }}
         >
-          <Button href={linkedIn} sx={{ width: 100 }} target='_blank' variant='outlined' color='secondary' size='small'><FontAwesomeIcon icon='fa-brands fa-linkedin' />LinkedIn</Button>
-          <Button href={youtube} sx={{ width: 100 }} target='_blank' variant='outlined' color='error' size='small'><FontAwesomeIcon icon='fa-brands fa-youtube' />Youtube</Button>
+          <SnsButton link={linkedIn} color='secondary' icon='fa-brands fa-linkedin' name='LinkedIn' />
+          <SnsButton link={youtube} color='error' icon='fa-brands fa-youtube' name='Youtube' />
         </Box>
         <Box
           display='flex'
@@ -78,10 +75,5 @@ function Main () {
     </div>
   )
 }
-// <Button variant='outlined' href='https://github.com/hyunjineeey' target='_blank'>
-//   Github
-// </Button>
-// <Button variant='outlined' href='mailto:hyunjineeey@gmail.com'>
-//   Email
-// </Button>
+
 export default Main
