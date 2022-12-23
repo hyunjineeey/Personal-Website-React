@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const SnsIcon = ({ link, icon }) => {
   return (
     <Link sx={{ marginLeft: '5px' }} href={link} color='black' underline='none' target='_blank' rel='noreferrer'>
-      <FontAwesomeIcon icon={icon} />
+      <FontAwesomeIcon size='sm' icon={icon} />
     </Link>
   )
 }
