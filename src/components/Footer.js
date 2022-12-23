@@ -6,26 +6,35 @@ import Link from '@mui/material/Link'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+const SnsIcon = ({ link, icon }) => {
+  return (
+    <Link sx={{ marginLeft: '5px' }} href={link} color='black' underline='none' target='_blank' rel='noreferrer'>
+      <FontAwesomeIcon icon={icon} />
+    </Link>
+  )
+}
+
+const SnsIcons = () => {
+  return (
+    <Box sx={{
+      maxWidth: '100px'
+    }}
+    >
+      <SnsIcon link='mailto:hyunjineeey@gmail.com' icon='fa-solid fa-envelope' />
+      <SnsIcon link='https://github.com/hyunjineeey' icon='fa-brands fa-github' />
+      <SnsIcon link='https://www.linkedin.com/in/hyunjineeey/' icon='fa-brands fa-linkedin' />
+      <SnsIcon link='https://www.youtube.com/@hyunjineeey' icon='fa-brands fa-youtube' />
+    </Box>
+  )
+}
+
 const Footer = () => {
   return (
     <div>
       <Divider sx={{ borderBottomWidth: 1, mb: 1 }} />
-      <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-        <Typography>© Hyunjin Jae, 2019 - 2023</Typography>
-        <Box>
-          <Link href='mailto:hyunjineeey@gmail.com' underline='none' target='_blank' rel='noreferrer'>
-            <FontAwesomeIcon icon='fa-solid fa-envelope' />
-          </Link>
-          <Link href='https://github.com/hyunjineeey' underline='none' target='_blank' rel='noreferrer'>
-            <FontAwesomeIcon icon='fa-brands fa-github' />
-          </Link>
-          <Link href='https://www.linkedin.com/in/hyunjineeey/' underline='none' target='_blank' rel='noreferrer'>
-            <FontAwesomeIcon icon='fa-brands fa-linkedin' />
-          </Link>
-          <Link href='https://www.youtube.com/@hyunjineeey' underline='none' target='_blank' rel='noreferrer'>
-            <FontAwesomeIcon icon='fa-brands fa-youtube' />
-          </Link>
-        </Box>
+      <Box sx={{ paddingLeft: '10%', paddingRight: '10%', display: 'flex', justifyContent: 'space-between' }}>
+        <Typography sx={{ textAlign: 'center', fontSize: '12px' }}>© Hyunjin Jae, 2019 - 2023</Typography>
+        <SnsIcons />
       </Box>
     </div>
   )
