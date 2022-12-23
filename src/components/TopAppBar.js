@@ -140,7 +140,7 @@ function TopAppBar () {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title='Switch language'>
               <IconButton size='small' sx={{ p: 0 }}>
-                <div class='fi fi-kr' />
+                <div className='fi fi-kr' />
               </IconButton>
             </Tooltip>
           </Box>
