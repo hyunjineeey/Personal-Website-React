@@ -5,10 +5,10 @@ import { Typography } from '@mui/material'
 import Button from '@mui/material/Button'
 import SearchIcon from '@mui/icons-material/Search'
 
-import OppositeContentTimeline from './OppositeContentTimeline'
-import RowAndColumnSpacing from './RowAndColumnSpacing'
+import ExperienceTimeline from './ExperienceTimeline'
+import Skills from './Skills'
 // import Interests from './Interests'
-import Footer from './Footer'
+import Footer from '../Footer'
 
 const useStyles = makeStyles({
   title: {
@@ -27,7 +27,7 @@ const About = () => {
       <Typography className={classes.title} sx={{ fontWeight: 'bold' }}>
         Experience / Education
       </Typography>
-      <OppositeContentTimeline />
+      <ExperienceTimeline />
       <Button variant='outlined' href='../resume.pdf' startIcon={<SearchIcon />}>
         Resume
       </Button>
@@ -35,7 +35,7 @@ const About = () => {
         <Typography sx={{ mb: 4, fontWeight: 'bold' }} className={classes.title}>
           Skills
         </Typography>
-        <RowAndColumnSpacing />
+        <Skills />
       </Box>
       <Footer />
     </Box>

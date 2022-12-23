@@ -13,7 +13,7 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center'
 }))
 
-export default function RowAndColumnSpacing () {
+export default function Skills () {
   return (
     <Box
       display='flex'

@@ -32,7 +32,14 @@ const Footer = () => {
   return (
     <div>
       <Divider sx={{ borderBottomWidth: 1, mb: 1 }} />
-      <Box sx={{ paddingLeft: '10%', paddingRight: '10%', mb: '10px', display: 'flex', justifyContent: 'space-between' }}>
+      <Box sx={{
+        paddingLeft: '10%',
+        paddingRight: '10%',
+        mb: '10px',
+        display: 'flex',
+        justifyContent: 'space-between'
+      }}
+      >
         <Typography sx={{ textAlign: 'center', fontSize: '12px' }}>© Hyunjin Jae, 2019 - 2023</Typography>
         <SnsIcons />
       </Box>

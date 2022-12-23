@@ -1,16 +1,16 @@
 import React from 'react'
 import Box from '@mui/material/Box'
 
-import BlogList from './BlogList'
-import Footer from './Footer'
+import ProjectItem from './ProjectItem'
+import Footer from '../Footer'
 
-const Blog = () => {
+const Projects = () => {
   return (
     <Box sx={{ textAlign: 'center' }}>
-      <BlogList />
+      <ProjectItem />
       <Footer />
     </Box>
   )
 }
 
-export default Blog
+export default Projects

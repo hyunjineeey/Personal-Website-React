@@ -2,12 +2,12 @@ import { Routes, Route } from 'react-router-dom'
 
 import './App.css'
 import TopAppBar from './components/TopAppBar'
-import Main from './components/Main'
-import About from './components/About'
-import Projects from './components/Projects'
-import Blog from './components/Blog'
-import Testimonials from './components/Testimonials'
-import Faq from './components/Faq'
+import Main from './components/main/Main'
+import About from './components/about/About'
+import Projects from './components/projects/Projects'
+import Blog from './components/blog/Blog'
+import Testimonials from './components/testimonials/Testimonials'
+import Faq from './components/faq/Faq'
 
 function App () {
   return (

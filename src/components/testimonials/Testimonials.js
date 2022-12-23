@@ -2,7 +2,7 @@ import React from 'react'
 import Box from '@mui/material/Box'
 import TestimonialsList from './TestimonialsList'
 
-import Footer from './Footer'
+import Footer from '../Footer'
 
 const Testimonials = () => {
   return (

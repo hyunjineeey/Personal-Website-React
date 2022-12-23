@@ -9,7 +9,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent'
 import Link from '@mui/material/Link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function OppositeContentTimeline () {
+export default function ExperienceTimeline () {
   return (
     <Timeline>
       <TimelineItem>

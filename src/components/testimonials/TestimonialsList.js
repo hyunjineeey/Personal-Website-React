@@ -8,13 +8,13 @@ import Avatar from '@mui/material/Avatar'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 
-import jacob from '../images/testimonials/jacob.jpeg'
-import joe from '../images/testimonials/joe.jpeg'
-import dan from '../images/testimonials/dan.jpeg'
-import john from '../images/testimonials/john.jpeg'
-import jeff from '../images/testimonials/jeff.jpeg'
-import steven from '../images/testimonials/steven.jpeg'
-import ming from '../images/testimonials/ming.jpeg'
+import jacob from '../../images/testimonials/jacob.jpeg'
+import joe from '../../images/testimonials/joe.jpeg'
+import dan from '../../images/testimonials/dan.jpeg'
+import john from '../../images/testimonials/john.jpeg'
+import jeff from '../../images/testimonials/jeff.jpeg'
+import steven from '../../images/testimonials/steven.jpeg'
+import ming from '../../images/testimonials/ming.jpeg'
 
 const t = require('./testimonials.json')
 
@@ -50,11 +50,7 @@ export default function TestimonialsList () {
   // }
 
   return (
-    <Box
-      display='flex'
-      alignItems='center'
-      justifyContent='center'
-    >
+    <Box display='flex' alignItems='center' justifyContent='center'>
       <List sx={{ mt: '-20px', width: '100%', maxWidth: '900px' }}>
         <ListItem alignItems='flex-start'>
           <ListItemAvatar>
@@ -64,22 +60,16 @@ export default function TestimonialsList () {
             primary={t.jacob.name}
             secondary={
               <>
-                <Typography
-                  variant='body2'
-                  color='text.primary'
-                >
+                <Typography variant='body2' color='text.primary'>
                   {t.jacob.title}
                 </Typography>
-                <Box
-                  sx={{ mt: '4px' }}
-                  color='text.primary'
-                >
-                  <Typography paragraph>{t.jacob.lines[0]}</Typography>
-                  <Typography paragraph>{t.jacob.lines[1]}</Typography>
-                  <Typography paragraph>{t.jacob.lines[2]}</Typography>
+                <Box sx={{ mt: '4px' }} color='text.primary'>
+                  <p>{t.jacob.lines[0]}</p>
+                  <p>{t.jacob.lines[1]}</p>
+                  <p>{t.jacob.lines[2]}</p>
                 </Box>
               </>
-          }
+            }
           />
         </ListItem>
         <Divider component='li' />
@@ -99,14 +89,11 @@ export default function TestimonialsList () {
                 >
                   {t.joe.title}
                 </Typography>
-                <Box
-                  sx={{ mt: '4px' }}
-                  color='text.primary'
-                >
-                  <Typography paragraph>{t.joe.lines}</Typography>
+                <Box sx={{ mt: '4px' }} color='text.primary'>
+                  <p>{t.joe.lines}</p>
                 </Box>
               </>
-          }
+            }
           />
         </ListItem>
         <Divider component='li' />
@@ -126,19 +113,16 @@ export default function TestimonialsList () {
                 >
                   Senior Software Engineer
                 </Typography>
-                <Box
-                  sx={{ mt: '4px' }}
-                  color='text.primary'
-                >
-                  <Typography paragraph>{t.dan.lines[0]}</Typography>
-                  <Typography paragraph>{t.dan.lines[1]}</Typography>
-                  <Typography paragraph>{t.dan.lines[2]}</Typography>
-                  <Typography paragraph>{t.dan.lines[3]}</Typography>
-                  <Typography paragraph>{t.dan.lines[4]}</Typography>
-                  <Typography paragraph>{t.dan.lines[5]}</Typography>
+                <Box sx={{ mt: '4px' }} color='text.primary'>
+                  <p>{t.dan.lines[0]}</p>
+                  <p>{t.dan.lines[1]}</p>
+                  <p>{t.dan.lines[2]}</p>
+                  <p>{t.dan.lines[3]}</p>
+                  <p>{t.dan.lines[4]}</p>
+                  <p>{t.dan.lines[5]}</p>
                 </Box>
               </>
-          }
+            }
           />
         </ListItem>
         <Divider component='li' />
@@ -158,14 +142,11 @@ export default function TestimonialsList () {
                 >
                   {t.john.title}
                 </Typography>
-                <Box
-                  sx={{ mt: '4px' }}
-                  color='text.primary'
-                >
-                  <Typography paragraph>{t.john.lines}</Typography>
+                <Box sx={{ mt: '4px' }} color='text.primary'>
+                  <p>{t.john.lines}</p>
                 </Box>
               </>
-          }
+            }
           />
         </ListItem>
         <Divider component='li' />
@@ -185,14 +166,11 @@ export default function TestimonialsList () {
                 >
                   {t.jeff.title}
                 </Typography>
-                <Box
-                  sx={{ mt: '4px' }}
-                  color='text.primary'
-                >
-                  <Typography paragraph>{t.jeff.lines}</Typography>
+                <Box sx={{ mt: '4px' }} color='text.primary'>
+                  <p>{t.jeff.lines}</p>
                 </Box>
               </>
-          }
+            }
           />
         </ListItem>
         <Divider component='li' />
@@ -212,16 +190,13 @@ export default function TestimonialsList () {
                 >
                   {t.steven.title}
                 </Typography>
-                <Box
-                  sx={{ mt: '4px' }}
-                  color='text.primary'
-                >
-                  <Typography paragraph>{t.steven.lines[0]}</Typography>
-                  <Typography paragraph>{t.steven.lines[1]}</Typography>
-                  <Typography paragraph>{t.steven.lines[2]}</Typography>
+                <Box sx={{ mt: '4px' }} color='text.primary'>
+                  <p>{t.steven.lines[0]}</p>
+                  <p>{t.steven.lines[1]}</p>
+                  <p>{t.steven.lines[2]}</p>
                 </Box>
               </>
-          }
+            }
           />
         </ListItem>
         <Divider component='li' />
@@ -241,18 +216,15 @@ export default function TestimonialsList () {
                 >
                   {t.ming.title}
                 </Typography>
-                <Box
-                  sx={{ mt: '4px' }}
-                  color='text.primary'
-                >
-                  <Typography paragraph>{t.ming.lines[0]}</Typography>
-                  <Typography paragraph>{t.ming.lines[1]}</Typography>
-                  <Typography paragraph>{t.ming.lines[2]}</Typography>
-                  <Typography paragraph>{t.ming.lines[3]}</Typography>
-                  <Typography paragraph>{t.ming.lines[4]}</Typography>
+                <Box sx={{ mt: '4px' }} color='text.primary'>
+                  <p>{t.ming.lines[0]}</p>
+                  <p>{t.ming.lines[1]}</p>
+                  <p>{t.ming.lines[2]}</p>
+                  <p>{t.ming.lines[3]}</p>
+                  <p>{t.ming.lines[4]}</p>
                 </Box>
               </>
-          }
+            }
           />
         </ListItem>
       </List>

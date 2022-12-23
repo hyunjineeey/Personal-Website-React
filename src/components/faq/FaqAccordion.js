@@ -18,12 +18,7 @@ export default function FaqAccordion () {
           <Typography>How do you pronounce your name?</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            You can pronounce my name as <Link
-              href='https://youtu.be/ZUfRG3Q6K_E' underline='none' target='_blank' rel='noreferrer'
-                                         >Hyeon-jin
-            </Link
-            >. Some of my friends call me 'Jin' or 'Jiny'. For your information, 'Hyunjin Jae' means 'Be a Bright Influence on the World'. That is what I am going to do in the future.
+          <Typography>You can pronounce my name as <Link href='https://youtu.be/ZUfRG3Q6K_E' underline='none' target='_blank' rel='noreferrer'>Hyeon-jin</Link>. Some of my friends call me 'Jin' or 'Jiny'. For your information, 'Hyunjin Jae' means 'Be a Bright Influence on the World'. That is what I am going to do in the future.
           </Typography>
         </AccordionDetails>
       </Accordion>
