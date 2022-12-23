@@ -20,7 +20,7 @@ const t = require('./testimonials.json')
 
 export default function TestimonialsList () {
   // TODO
-  //const ListBox = ({ name, lines }) => {
+  // const ListBox = ({ name, lines }) => {
   //  return (
   //    <ListItem alignItems='flex-start'>
   //        <ListItemAvatar>
@@ -47,7 +47,7 @@ export default function TestimonialsList () {
   //        />
   //      </ListItem>
   //  )
-  //}
+  // }
 
   return (
     <Box
@@ -68,7 +68,7 @@ export default function TestimonialsList () {
                   variant='body2'
                   color='text.primary'
                 >
-                {t.jacob.title}
+                  {t.jacob.title}
                 </Typography>
                 <Box
                   sx={{ mt: '4px' }}
@@ -210,7 +210,7 @@ export default function TestimonialsList () {
                   variant='body2'
                   color='text.primary'
                 >
-                  {t.steven.title} 
+                  {t.steven.title}
                 </Typography>
                 <Box
                   sx={{ mt: '4px' }}
@@ -239,7 +239,7 @@ export default function TestimonialsList () {
                   variant='body2'
                   color='text.primary'
                 >
-                  {t.ming.title} 
+                  {t.ming.title}
                 </Typography>
                 <Box
                   sx={{ mt: '4px' }}
