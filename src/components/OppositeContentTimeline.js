@@ -14,23 +14,10 @@ export default function OppositeContentTimeline () {
     <Timeline>
       <TimelineItem>
         <TimelineOppositeContent color='text.secondary'>
-          Jan 2023 - Present
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot variant='filled' color='error' />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          <Link href='https://sentera.com/' underline='none' target='_blank' rel='noreferrer'>Sentera</Link>
-          <br />Software Engineer
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent color='text.secondary'>
           Oct 2021 - Dec 2022
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot variant='outlined' />
+          <TimelineDot variant='filled' color='error' />
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
