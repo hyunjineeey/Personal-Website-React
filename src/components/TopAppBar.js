@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { useEffect, useState } from "react"
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
@@ -36,6 +36,12 @@ function TopAppBar () {
     setAnchorElUser(null)
   }
 */
+
+  const [clicked, setClicked] = useState(false)
+  const handleIconClick = () => {
+    setClicked(true)
+  }
+
   return (
     <AppBar position='fixed'>
       <Container maxWidth='xl'>
@@ -105,7 +111,7 @@ function TopAppBar () {
             variant='h5'
             noWrap
             component='a'
-            href=''
+            href='/'
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -138,8 +144,8 @@ function TopAppBar () {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title='Switch language'>
-              <IconButton sx={{ p: 0 }}>
-                <div class='fi fi-kr' />
+              <IconButton size='small' sx={{ p: 0 }}>
+                 <div class='fi fi-kr' />
               </IconButton>
             </Tooltip>
           </Box>
