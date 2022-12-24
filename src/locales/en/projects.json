@@ -5,7 +5,7 @@
   },
   "covid19": {
     "title": "Covid-19 Testing Application",
-    "sub": "A web application that helps people who want to register for covid-19 test. Users can find a test location, select a time, make an appointment, and check their results. They also can manage(add/edit/delete) their profile info and appointments."
+    "sub": "A web application that helps people who want to register for covid-19 test. Users can find a test location, select a time, make an appointment, and check their results. They also can manage their profile info and appointments."
   },
   "syntheticMonitoring": {
     "title": "Synthetic Monitoring",
@@ -23,13 +23,9 @@
     "title": "Chat Server",
     "sub": "A chat server that allows multiple users to (text) chat with each other over the internet."
   },
-  "personalWebsite": {
-    "title": "Personal Website",
-    "sub": "Created/designed it by myself and it has all about me."
-  },
   "eventFilter": {
     "title": "Event Filter",
-    "sub": "A website that you can filter an event that contains a word you typed. I usually used php to find the event and display it to the client."
+    "sub": "A website that you can filter an event that contains a word you typed. I used php to find the event and display it to the client."
   },
   "userControlSystem": {
     "title": "User Control System",
@@ -40,4 +36,3 @@
     "sub": "This project is based on the idea of document similarity, which is a first step in many 'big data' applications such as improving search, automated document classification, automated document summary, authorship attribution, and plagiarism detection."
   }
 }
-

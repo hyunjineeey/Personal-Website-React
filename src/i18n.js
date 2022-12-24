@@ -7,18 +7,22 @@ import aboutEN from './locales/en/about.json'
 import aboutKR from './locales/kr/about.json'
 import testimonialsEN from './locales/en/testimonials.json'
 import testimonialsKR from './locales/kr/testimonials.json'
+import projectsEN from './locales/en/projects.json'
+import projectsKR from './locales/kr/projects.json'
 
 // the translations
 const resources = {
   en: {
     about: aboutEN,
     shared: sharedEN,
-    testimonials: testimonialsEN
+    testimonials: testimonialsEN,
+    projects: projectsEN
   },
   kr: {
     about: aboutKR,
     shared: sharedKR,
-    testimonials: testimonialsKR
+    testimonials: testimonialsKR,
+    projects: projectsKR
   }
 }
 
