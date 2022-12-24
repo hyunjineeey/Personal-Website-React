@@ -12,15 +12,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function ExperienceTimeline () {
   const Item = ({ date, variant, color, company, title, link, icon }) => {
     return (
-      <TimelineItem >
-        <TimelineOppositeContent sx={{ fontSize: "0.9rem" }} >
+      <TimelineItem>
+        <TimelineOppositeContent sx={{ fontSize: '0.9rem' }}>
           {date}
         </TimelineOppositeContent>
         <TimelineSeparator>
           {icon
-            ? <TimelineDot color={color}>
-              <FontAwesomeIcon size='xs' icon='fa-solid fa-graduation-cap' />
+            ? (
+              <TimelineDot color={color}>
+                <FontAwesomeIcon size='xs' icon='fa-solid fa-graduation-cap' />
               </TimelineDot>
+              )
             : <TimelineDot variant={variant} color={color} />}
           <TimelineConnector />
         </TimelineSeparator>

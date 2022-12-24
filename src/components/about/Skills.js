@@ -14,6 +14,20 @@ const Item = styled(Paper)(({ theme }) => ({
 }))
 
 export default function Skills () {
+  const GridItem = ({ name, icon, color }) => {
+    return (
+      <Grid item xs={6} sm={3}>
+        <Item>
+          <FontAwesomeIcon
+            icon={icon}
+            size='4x'
+            style={{ color }}
+          />
+          <Typography mt={2} sx={{ fontSize: 14 }}>{name}</Typography>
+        </Item>
+      </Grid>
+    )
+  }
   return (
     <Box
       display='flex'
@@ -22,126 +36,18 @@ export default function Skills () {
       sx={{ width: '100%' }}
     >
       <Grid container rowSpacing={2} columnSpacing={{ xs: 2, sm: 1, md: 1 }}>
-        <Grid item xs={6} sm={3}>
-          <Item>
-            <FontAwesomeIcon
-              icon='fa-brands fa-react'
-              size='4x'
-              style={{ color: '#5ed4f4' }}
-            />
-            <Typography>React</Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Item>
-            <FontAwesomeIcon
-              icon='fa-brands fa-js'
-              size='4x'
-              style={{ color: '#d4b52a' }}
-            />
-            <Typography>JavaScript</Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Item>
-            <FontAwesomeIcon
-              icon='fa-brands fa-node'
-              size='4x'
-              style={{ color: '#73ad5e' }}
-            />
-            <Typography>Node.js</Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Item>
-            <FontAwesomeIcon
-              icon='fa-brands fa-html5'
-              size='4x'
-              style={{ color: '#dd4d26' }}
-            />
-            <Typography>HTML</Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Item>
-            <FontAwesomeIcon
-              icon='fa-brands fa-css3-alt'
-              size='4x'
-              style={{ color: '#146fb1' }}
-            />
-            <Typography>CSS</Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Item>
-            <FontAwesomeIcon
-              icon='fa-brands fa-php'
-              size='4x'
-              style={{ color: '#697ab2' }}
-            />
-            <Typography>PHP</Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Item>
-            <FontAwesomeIcon
-              icon='fa-brands fa-java'
-              size='4x'
-              style={{ color: '#dc2d29' }}
-            />
-            <Typography>Java</Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Item>
-            <FontAwesomeIcon
-              icon='fa-brands fa-python'
-              size='4x'
-              style={{ color: '#749abe' }}
-            />
-            <Typography>Python</Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Item>
-            <FontAwesomeIcon
-              icon='fa-solid fa-database'
-              size='4x'
-              style={{ color: '#df33a6' }}
-            />
-            <Typography>GraphQL</Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Item>
-            <FontAwesomeIcon
-              icon='fa-brands fa-git'
-              size='4x'
-              style={{ color: '#ea4d31' }}
-            />
-            <Typography>Git</Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Item>
-            <FontAwesomeIcon
-              icon='fa-brands fa-jira'
-              size='4x'
-              style={{ color: '#126be1' }}
-            />
-            <Typography>Jira</Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Item>
-            <FontAwesomeIcon
-              icon='fa-brands fa-figma'
-              size='4x'
-              style={{ color: '#09c87e' }}
-            />
-            <Typography>Figma</Typography>
-          </Item>
-        </Grid>
+        <GridItem name='React' icon='fa-brands fa-react' color='#5ed4f4' />
+        <GridItem name='JavaScript' icon='fa-brands fa-js' color='#d4b52a' />
+        <GridItem name='Node.js' icon='fa-brands fa-node' color='#73ad5e' />
+        <GridItem name='HTML' icon='fa-brands fa-html5' color='#dd4d26' />
+        <GridItem name='CSS' icon='fa-brands fa-css3-alt' color='#146fb1' />
+        <GridItem name='PHP' icon='fa-brands fa-php' color='#697ab2' />
+        <GridItem name='Java' icon='fa-brands fa-java' color='#dc2d29' />
+        <GridItem name='Python' icon='fa-brands fa-python' color='#749abe' />
+        <GridItem name='GraphQL' icon='fa-solid fa-database' color='#df33a6' />
+        <GridItem name='Git' icon='fa-brands fa-git' color='#ea4d31' />
+        <GridItem name='Jira' icon='fa-brands fa-jira' color='#126be1' />
+        <GridItem name='Figma' icon='fa-brands fa-figma' color='#09c87e' />
       </Grid>
     </Box>
   )
