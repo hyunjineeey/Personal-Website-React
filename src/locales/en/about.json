@@ -1,0 +1,37 @@
+{
+  "experience": "Experience",
+  "education": "Education",
+  "sentera": {
+    "date": "Oct 2021 - Dec 2022",
+    "title": "Frontend Engineer"
+  },
+  "umnSchool": {
+    "date": "Graduated Dec 2020",
+    "title": "Computer Science"
+  },
+  "udemyReact": {
+    "date": "Completed Oct 2020",
+    "title": "The Modern React Bootcamp"
+  },
+  "smartThings": {
+    "date": "May - Aug 2020"
+  },
+  "softwareEngineerIntern": "Software Engineer Intern",
+  "flywheel": {
+    "date": "Nov 2019 - May 2020"
+  },
+  "umnWork": {
+    "date": "May - Dec 2019",
+    "title": "Student Web Support"
+  },
+  "udemyWeb": {
+    "date": "Completed July 2019",
+    "title": "The Web Developer Bootcamp"
+  },
+  "childrenStoryTime": {
+    "date": "Feb - Jun 2019",
+    "title": "Frontend Engineer Intern"
+  },
+  "resume": "Resume",
+  "skills": "Skills"
+}

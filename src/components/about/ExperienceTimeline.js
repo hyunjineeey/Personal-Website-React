@@ -8,8 +8,10 @@ import TimelineDot from '@mui/lab/TimelineDot'
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent'
 import Link from '@mui/material/Link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTranslation } from 'react-i18next'
 
 export default function ExperienceTimeline () {
+  const { t } = useTranslation(['about'])
   const Item = ({ date, variant, color, company, title, link, icon }) => {
     return (
       <TimelineItem>
@@ -23,12 +25,17 @@ export default function ExperienceTimeline () {
                 <FontAwesomeIcon size='xs' icon='fa-solid fa-graduation-cap' />
               </TimelineDot>
               )
-            : <TimelineDot variant={variant} color={color} />}
+            : (
+              <TimelineDot variant={variant} color={color} />
+              )}
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Link href={link} underline='none' target='_blank' rel='noreferrer'>{company}</Link>
-          <br />{title}
+          <Link href={link} underline='none' target='_blank' rel='noreferrer'>
+            {company}
+          </Link>
+          <br />
+          {title}
         </TimelineContent>
       </TimelineItem>
     )
@@ -36,62 +43,62 @@ export default function ExperienceTimeline () {
   return (
     <Timeline sx={{ p: 0 }}>
       <Item
-        date='Oct 2021 - Dec 2022'
+        date={t('about:sentera.date')}
         variant='filled'
         company='Sentera'
-        title='Frontend Engineer'
+        title={t('about:sentera.title')}
         link='https://sentera.com/'
       />
       <Item
-        date='Graduated Dec 2020'
+        date={t('about:umnSchool.date')}
         color='warning'
         company='University of Minnesota'
-        title='Computer Science'
+        title={t('about:umnSchool.title')}
         link='https://cse.umn.edu/college/computer-science'
         icon='fa-solid fa-graduation-cap'
       />
       <Item
-        date='Completed Oct 2020'
+        date={t('about:udemyReact.date')}
         color='success'
         company='Udemy'
-        title='The Modern React Bootcamp'
+        title={t('about:udemyReact.title')}
         link='https://www.udemy.com/course/modern-react-bootcamp/'
         icon='fa-brands fa-free-code-camp'
       />
       <Item
-        date='May - Aug 2020'
+        date={t('about:smartThings.date')}
         variant='outlined'
         company='SmartThings'
-        title='Software Engineer Intern'
+        title={t('about:softwareEngineerIntern')}
         link='https://www.smartthings.com/'
       />
       <Item
-        date='Nov 2019 - May 2020'
+        date={t('about:flywheel.date')}
         variant='outlined'
         company='Flywheel'
-        title='Software Engineer Intern'
+        title={t('about:softwareEngineerIntern')}
         link='https://flywheel.io/'
       />
       <Item
-        date='May - Dec 2019'
+        date={t('about:umnWork.date')}
         variant='outlined'
         company='University of Minnesota'
-        title='Student Web Support'
+        title={t('about:umnWork.title')}
         link='https://twin-cities.umn.edu/'
       />
       <Item
-        date='Completed July 2019'
+        date={t('about:udemyWeb.date')}
         color='success'
         company='Udemy'
-        title='The Web Developer Bootcamp'
+        title={t('about:udemyWeb.title')}
         link='https://www.udemy.com/course/the-web-developer-bootcamp/'
         icon='fa-brands fa-free-code-camp'
       />
       <Item
-        date='Feb - Jun 2019'
+        date={t('about:childrenStoryTime.date')}
         variant='outlined'
         company='Children Story Time'
-        title='Frontend Engineer Intern'
+        title={t('about:childrenStoryTime.title')}
         link='https://www.childrenstorytime.co/'
       />
     </Timeline>

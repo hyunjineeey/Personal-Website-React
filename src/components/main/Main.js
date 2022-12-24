@@ -3,6 +3,7 @@ import Button from '@mui/material/Button'
 import { Typography } from '@mui/material'
 import Divider from '@mui/material/Divider'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTranslation } from 'react-i18next'
 
 import MainAvatar from './MainAvatar'
 
@@ -21,6 +22,7 @@ const SnsButton = ({ link, color, icon, name }) => {
 }
 
 function Main () {
+  const { t } = useTranslation()
   return (
     <div>
       <Box
@@ -39,7 +41,7 @@ function Main () {
             fontWeight: 'bold'
           }}
         >
-          Hyunjin Jae
+          {t('shared:hyunjin')}
         </Typography>
         <Typography>Frontend Engineer at Sentera</Typography>
         <Typography>Living in St Paul, Minnesota</Typography>

@@ -1,0 +1,37 @@
+{
+  "experience": "경험",
+  "education": "학업",
+  "sentera": {
+    "date": "2021년 10월 - 2022년 12월",
+    "title": "프론트엔드 개발자"
+  },
+  "umnSchool": {
+    "date": "2020년 12월 졸업",
+    "title": "컴퓨터 사이언스"
+  },
+  "udemyReact": {
+    "date": "2020년 10월 이수",
+    "title": "모던 리액트 부트캠프"
+  },
+  "smartThings": {
+    "date": "2020년 5월 - 8월"
+  },
+  "softwareEngineerIntern": "소프트웨어 엔지니어 인턴",
+  "flywheel": {
+    "date": "2019년 11월 - 2020년 5월"
+  },
+  "umnWork": {
+    "date": "2019년 5월 - 12월",
+    "title": "학생 웹 개발자"
+  },
+  "udemyWeb": {
+    "date": "2019년 7월 이수",
+    "title": "웹 개발자 부트캠프"
+  },
+  "childrenStoryTime": {
+    "date": "2019년 2월 - 6월",
+    "title": "프론트엔드 개발자 인턴"
+  },
+  "resume": "이력서",
+  "skills": "능력"
+}

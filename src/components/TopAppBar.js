@@ -12,6 +12,7 @@ import Tooltip from '@mui/material/Tooltip'
 import MenuItem from '@mui/material/MenuItem'
 import { Link } from 'react-router-dom'
 
+import i18n from '../i18n'
 import '/node_modules/flag-icons/css/flag-icons.min.css'
 
 const pages = ['About', 'Projects', 'Testimonials']
@@ -36,7 +37,9 @@ function TopAppBar () {
     setAnchorElUser(null)
   }
 */
-
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng)
+  }
   return (
     <AppBar position='fixed'>
       <Container maxWidth='xl'>
@@ -140,7 +143,15 @@ function TopAppBar () {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title='Switch language'>
               <IconButton size='small' sx={{ p: 0 }}>
-                <div className='fi fi-kr' />
+                <div
+                  onClick={() => changeLanguage('kr')}
+                  className='fi fi-kr'
+                  style={{ marginRight: 5 }}
+                />
+                <div
+                  onClick={() => changeLanguage('us')}
+                  className='fi fi-us'
+                />
               </IconButton>
             </Tooltip>
           </Box>
