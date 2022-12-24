@@ -31,7 +31,7 @@ i18n
   .init({
     resources,
     defaultNS: 'shared',
-    lng: 'en',
+    lng: localStorage.getItem('lng') || 'en',
     fallbackLng: 'en',
 
     // keySeparator: false, // we do not use keys in form messages.welcome
