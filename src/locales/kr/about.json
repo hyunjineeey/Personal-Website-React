@@ -33,5 +33,18 @@
     "title": "프론트엔드 개발자 인턴"
   },
   "resume": "이력서",
-  "skills": "능력"
+  "skills": "능력",
+  "interests": "취미",
+  "readingAndWriting": {
+    "title": "읽기 / 쓰기",
+    "sub": "책을 읽고 제 생각과 감정에 대해 글 쓰는 것을 좋아합니다."
+  },
+  "makingVideo": {
+    "title": "영상 제작",
+    "sub": "제 하루에 대해 촬영하는 것을 즐겨요."
+  },
+  "exploreNew": {
+    "title": "새로운 경험 하기",
+    "sub": "저는 현재 힙합 댄스를 배우고 있어요!"
+  }
 }

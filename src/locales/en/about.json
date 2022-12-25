@@ -33,5 +33,18 @@
     "title": "Frontend Engineer Intern"
   },
   "resume": "Resume",
-  "skills": "Skills"
+  "skills": "Skills",
+  "interests": "Interests",
+  "readingAndWriting": {
+    "title": "Reading / Writing",
+    "sub": "In my spare time, I like to read and write my thoughts and feelings."
+  },
+  "makingVideo": {
+    "title": "Making a video",
+    "sub": "I enjoy filming my life."
+  },
+  "exploreNew": {
+    "title": "Explore new things",
+    "sub": "I am currently taking a hip hop dance class!"
+  }
 }
