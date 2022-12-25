@@ -111,6 +111,7 @@ export default function TestimonialsList () {
           name={tes.ming.name}
           src={ming}
           title={tes.ming.title}
+          isLast
           lines={
             <div>
               <p>{t('testimonials:ming.lines.0')}</p>
@@ -120,7 +121,6 @@ export default function TestimonialsList () {
               <p>{t('testimonials:ming.lines.4')}</p>
             </div>
           }
-          isLast
         />
       </List>
     </Box>
