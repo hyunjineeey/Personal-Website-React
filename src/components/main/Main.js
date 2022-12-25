@@ -14,9 +14,18 @@ const youtube = 'https://www.youtube.com/@hyunjineeey'
 
 const SnsButton = ({ link, color, icon, name }) => {
   return (
-    <Button href={link} sx={{ width: 85 }} target='_blank' variant='outlined' color={color} size='small'>
+    <Button
+      href={link}
+      sx={{ width: 85 }}
+      target='_blank'
+      variant='outlined'
+      color={color}
+      size='small'
+    >
       <FontAwesomeIcon icon={icon} />
-      <Typography sx={{ ml: 1, fontSize: '13px', textTransform: 'capitalize' }}>{name}</Typography>
+      <Typography sx={{ ml: 1, fontSize: '13px', textTransform: 'capitalize' }}>
+        {name}
+      </Typography>
     </Button>
   )
 }
@@ -46,21 +55,33 @@ function Main () {
         <Typography>Frontend Engineer at Sentera</Typography>
         <Typography>Living in St Paul, Minnesota</Typography>
         <Typography>Born and Raised in Seoul, South Korea</Typography>
-        <Box
-          display='flex'
-          gap={1}
-          sx={{ mt: 3 }}
-        >
-          <SnsButton link={email} color='warning' icon='fa-solid fa-envelope' name='Email' />
-          <SnsButton link={github} color='success' icon='fa-brands fa-github' name='Github' />
+        <Box display='flex' gap={1} sx={{ mt: 3 }}>
+          <SnsButton
+            link={email}
+            color='warning'
+            icon='fa-solid fa-envelope'
+            name='Email'
+          />
+          <SnsButton
+            link={github}
+            color='success'
+            icon='fa-brands fa-github'
+            name='Github'
+          />
         </Box>
-        <Box
-          display='flex'
-          gap={1}
-          sx={{ mt: 1 }}
-        >
-          <SnsButton link={linkedIn} color='secondary' icon='fa-brands fa-linkedin' name='LinkedIn' />
-          <SnsButton link={youtube} color='error' icon='fa-brands fa-youtube' name='Youtube' />
+        <Box display='flex' gap={1} sx={{ mt: 1 }}>
+          <SnsButton
+            link={linkedIn}
+            color='secondary'
+            icon='fa-brands fa-linkedin'
+            name='LinkedIn'
+          />
+          <SnsButton
+            link={youtube}
+            color='error'
+            icon='fa-brands fa-youtube'
+            name='Youtube'
+          />
         </Box>
         <Box
           display='flex'
@@ -71,7 +92,9 @@ function Main () {
       </Box>
       <Box>
         <Divider sx={{ borderBottomWidth: 1, mb: 0.2 }} />
-        <Typography sx={{ textAlign: 'center', fontSize: '12px' }}>© Hyunjin Jae, 2019 - 2023</Typography>
+        <Typography sx={{ textAlign: 'center', fontSize: '12px' }}>
+          © Hyunjin Jae, 2019 - 2022
+        </Typography>
       </Box>
     </div>
   )
