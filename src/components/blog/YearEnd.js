@@ -8,22 +8,22 @@ import CardMedia from '@mui/material/CardMedia'
 
 import pic2020 from '../../images/blog/2020.JPG'
 import Footer from '../Footer'
-import { theme } from '../../theme'
+import { theme } from '../../Styles'
 
 const Responsive = styled('div')(({ theme, page }) => ({
   [theme.breakpoints.up('mobile')]: {
     paddingLeft: '20px',
-    paddingRight: '20px'
+    paddingRight: '20px',
   },
   [theme.breakpoints.up('tablet')]: {
-    margin: 0
+    margin: 0,
   },
   [theme.breakpoints.up('desktop')]: {
-    margin: 0
-  }
+    margin: 0,
+  },
 }))
 
-export default function YearEnd () {
+export default function YearEnd() {
   const { t } = useTranslation()
 
   return (
@@ -60,7 +60,7 @@ export default function YearEnd () {
                 alt='2020YearEnd'
                 style={{
                   maxWidth: { xs: 350, md: 250 },
-                  maxHeight: { xs: 233, md: 167 }
+                  maxHeight: { xs: 233, md: 167 },
                 }}
               />
               <p>{t('blog:2020.sub')}</p>

@@ -13,21 +13,21 @@ import Link from '@mui/material/Link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'react-i18next'
 
-import { theme } from '../../theme'
+import { theme } from '../../Styles'
 
 const Responsive = styled('div')(({ theme, page }) => ({
   [theme.breakpoints.up('mobile')]: {
-    marginLeft: '70px'
+    marginLeft: '70px',
   },
   [theme.breakpoints.up('tablet')]: {
-    margin: 0
+    margin: 0,
   },
   [theme.breakpoints.up('desktop')]: {
-    margin: 0
-  }
+    margin: 0,
+  },
 }))
 
-export default function ExperienceTimeline () {
+export default function ExperienceTimeline() {
   const { t } = useTranslation(['about'])
   const Item = ({ date, variant, color, company, title, link, icon }) => {
     return (
@@ -38,7 +38,7 @@ export default function ExperienceTimeline () {
               sx={{
                 fontSize: '0.9rem',
                 textAlign: 'right',
-                display: { mobile: 'none', tablet: 'block', desktop: 'block' }
+                display: { mobile: 'none', tablet: 'block', desktop: 'block' },
               }}
               variant='body3'
             >
@@ -73,8 +73,8 @@ export default function ExperienceTimeline () {
                   display: {
                     mobile: 'block',
                     tablet: 'none',
-                    desktop: 'none'
-                  }
+                    desktop: 'none',
+                  },
                 }}
               >
                 {date}

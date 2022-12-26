@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { isObject, size, range, forEach, toString, isArray, map } from 'lodash'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import Divider from '@mui/material/Divider'
@@ -17,17 +16,14 @@ import john from '../../images/testimonials/john.jpeg'
 import jeff from '../../images/testimonials/jeff.jpeg'
 import steven from '../../images/testimonials/steven.jpeg'
 import ming from '../../images/testimonials/ming.jpeg'
-import { sizeHeight } from '@mui/system'
+
+import { MultilineTranslation } from '../../Styles'
 
 const tes = require('../../locales/en/testimonials.json')
 
-/* <p>{t(`testimonials:${name}.lines`)}</p> */
-{
-  /* <Box color='text.primary'>{lines}</Box> */
-}
 export default function TestimonialsList() {
   const { t } = useTranslation()
-  const ListBox = ({ name, fname, src, title, lines, isLast = false }) => {
+  const ListBox = ({ name, fname, src, title, isLast = false }) => {
     return (
       <div>
         <ListItem alignItems='flex-start'>
@@ -42,13 +38,9 @@ export default function TestimonialsList() {
                   {title}
                 </Typography>
                 <Box color='text.primary'>
-                  {isObject(lines) ? (
-                    map(lines, function (index) {
-                      return <p>{t(`testimonials:${fname}.lines.${index}`)}</p>
-                    })
-                  ) : (
-                    <p>{t(`testimonials:${fname}.lines`)}</p>
-                  )}
+                  <MultilineTranslation
+                    text={t(`testimonials:${fname}.lines`)}
+                  />
                 </Box>
               </>
             }
@@ -67,42 +59,36 @@ export default function TestimonialsList() {
           fname='jacob'
           src={jacob}
           title={tes.jacob.title}
-          lines={tes.jacob.lines}
         />
         <ListBox
           name={tes.joe.name}
           fname='joe'
           src={joe}
           title={tes.joe.title}
-          lines={tes.joe.lines}
         />
         <ListBox
           name={tes.dan.name}
           fname='dan'
           src={dan}
           title={tes.dan.title}
-          lines={tes.dan.lines}
         />
         <ListBox
           name={tes.john.name}
           fname='john'
           src={john}
           title={tes.john.title}
-          lines={tes.john.lines}
         />
         <ListBox
           name={tes.jeff.name}
           fname='jeff'
           src={jeff}
           title={tes.jeff.title}
-          lines={tes.jeff.lines}
         />
         <ListBox
           name={tes.steven.name}
           fname='steven'
           src={steven}
           title={tes.steven.title}
-          lines={tes.steven.lines}
         />
         <ListBox
           name={tes.ming.name}
@@ -110,7 +96,6 @@ export default function TestimonialsList() {
           src={ming}
           title={tes.ming.title}
           isLast
-          lines={tes.ming.lines}
         />
       </List>
     </Box>
