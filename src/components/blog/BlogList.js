@@ -6,45 +6,48 @@ import Divider from "@mui/material/Divider";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export default function BlogList() {
   const { t } = useTranslation();
-  const Item = ({ title, date, sub, isLast = false }) => {
+  const Item = ({ title, page, date, sub, isLast = false }) => {
     return (
       <div>
         <ListItem alignItems="flex-start">
-          <ListItemText
-            primary={
-              <Typography variant="h5" sx={{ fontWeight: "medium" }}>
-                {title}
-              </Typography>
-            }
-            secondary={
-              <>
-                <Typography
-                  variant="subtitle2"
-                  color="text.secondary"
-                  sx={{ mt: 2 }}
-                >
-                  {date}
+          <Link style={{ textDecoration: "none", color: "black" }} to={page}>
+            <ListItemText
+              primary={
+                <Typography variant="h5" sx={{ fontWeight: "medium" }}>
+                  {title}
                 </Typography>
-                <Typography
-                  variant="body1"
-                  color="text.primary"
-                  sx={{ mt: 2, mb: 2 }}
-                >
-                  {sub}
-                </Typography>
-                <Typography
-                  variant="subtitle2"
-                  sx={{ textTransform: "uppercase" }}
-                  color="text.secondary"
-                >
-                  {t("blog:readMore")}
-                </Typography>
-              </>
-            }
-          />
+              }
+              secondary={
+                <>
+                  <Typography
+                    variant="subtitle2"
+                    color="text.secondary"
+                    sx={{ mt: 2 }}
+                  >
+                    {date}
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    color="text.primary"
+                    sx={{ mt: 2, mb: 2 }}
+                  >
+                    {sub}
+                  </Typography>
+                  <Typography
+                    variant="subtitle2"
+                    sx={{ textTransform: "uppercase" }}
+                    color="text.secondary"
+                  >
+                    {t("blog:readMore")}
+                  </Typography>
+                </>
+              }
+            />
+          </Link>
         </ListItem>
         {!isLast && <Divider component="li" />}
       </div>
@@ -52,14 +55,24 @@ export default function BlogList() {
   };
   return (
     <Box display="flex" alignItems="center" justifyContent="center">
-      <List sx={{ mt: "-20px", width: "100%", maxWidth: "900px" }}>
+      <List
+        sx={{
+          paddingLeft: "20px",
+          paddingRight: "20px",
+          mt: "-20px",
+          width: "100%",
+          maxWidth: "900px",
+        }}
+      >
         <Item
           title={t("blog:2020.title")}
+          page="/Blog/YearEnd"
           date={t("blog:2020.date")}
           sub={t("blog:2020.sub")}
         />
         <Item
           title={t("blog:smartThings.title")}
+          page="/Blog/SmartThings"
           date={t("blog:smartThings.date")}
           sub={t("blog:smartThings.sub")}
           isLast

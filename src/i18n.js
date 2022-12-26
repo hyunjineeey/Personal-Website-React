@@ -11,6 +11,8 @@ import projectsEN from './locales/en/projects.json'
 import projectsKR from './locales/kr/projects.json'
 import blogEN from './locales/en/blog.json'
 import blogKR from './locales/kr/blog.json'
+import yearEndEN from './locales/en/yearEnd.json'
+import yearEndKR from './locales/kr/yearEnd.json'
 
 // the translations
 const resources = {
@@ -19,14 +21,16 @@ const resources = {
     shared: sharedEN,
     testimonials: testimonialsEN,
     projects: projectsEN,
-    blog: blogEN
+    blog: blogEN,
+    yearEnd: yearEndEN
   },
   kr: {
     about: aboutKR,
     shared: sharedKR,
     testimonials: testimonialsKR,
     projects: projectsKR,
-    blog: blogKR
+    blog: blogKR,
+    yearEnd: yearEndKR
   }
 }
 

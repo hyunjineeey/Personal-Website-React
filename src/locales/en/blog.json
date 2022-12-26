@@ -9,5 +9,7 @@
     "title": "Summer Internship Experience at SmartThings",
     "date": "Sep 24, 2020",
     "sub": "This synthetic monitor performs as a canary for any problems that may arise in the production environment. The synthetic monitoring system measures the time of the process starting with an API call and ending with event delivery."
-  }
+  },
+  "published": "Published",
+  "updated": "Updated"
 }
