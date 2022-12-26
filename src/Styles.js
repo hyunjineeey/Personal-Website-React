@@ -1,7 +1,7 @@
 import { createTheme } from '@mui/material'
 
-export const MultilineTranslation = ({ text }) => {
-  const items = text?.split('\n')
+export const MultilineTranslation = ({ lines }) => {
+  const items = lines?.split('\n')
   return (
     <>
       {items?.map((item) => (

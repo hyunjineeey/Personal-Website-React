@@ -39,7 +39,7 @@ export default function TestimonialsList() {
                 </Typography>
                 <Box color='text.primary'>
                   <MultilineTranslation
-                    text={t(`testimonials:${fname}.lines`)}
+                    lines={t(`testimonials:${fname}.lines`)}
                   />
                 </Box>
               </>
