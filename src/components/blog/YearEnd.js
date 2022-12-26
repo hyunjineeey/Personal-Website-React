@@ -13,14 +13,14 @@ import { theme, MultilineTranslation } from '../../Styles'
 const Responsive = styled('div')(({ theme, page }) => ({
   [theme.breakpoints.up('mobile')]: {
     paddingLeft: '20px',
-    paddingRight: '20px',
+    paddingRight: '20px'
   },
   [theme.breakpoints.up('tablet')]: {
-    margin: 0,
+    margin: 0
   },
   [theme.breakpoints.up('desktop')]: {
-    margin: 0,
-  },
+    margin: 0
+  }
 }))
 
 const TopSection = ({ title, datePublished, dateUpdated, img, alt, sub }) => {
@@ -43,7 +43,7 @@ const TopSection = ({ title, datePublished, dateUpdated, img, alt, sub }) => {
         alt={alt}
         style={{
           maxWidth: { xs: 350, md: 250 },
-          maxHeight: { xs: 233, md: 167 },
+          maxHeight: { xs: 233, md: 167 }
         }}
       />
       <p>{sub}</p>
@@ -65,7 +65,7 @@ const Section = ({ title, lines }) => {
   )
 }
 
-export default function YearEnd() {
+export default function YearEnd () {
   const { t } = useTranslation()
 
   return (
@@ -83,7 +83,7 @@ export default function YearEnd() {
                 textAlign: 'left',
                 width: '100%',
                 maxWidth: '900px',
-                lineHeight: '160%',
+                lineHeight: '160%'
               }}
             >
               <TopSection
@@ -96,31 +96,31 @@ export default function YearEnd() {
               />
               <Section
                 title={t('yearEnd:covid.title')}
-                lines={t(`yearEnd:covid.lines`)}
+                lines={t('yearEnd:covid.lines')}
               />
               <Section
                 title={t('yearEnd:internship.title')}
-                lines={t(`yearEnd:internship.lines`)}
+                lines={t('yearEnd:internship.lines')}
               />
               <Section
                 title={t('yearEnd:blackLivesMatter.title')}
-                lines={t(`yearEnd:blackLivesMatter.lines`)}
+                lines={t('yearEnd:blackLivesMatter.lines')}
               />
               <Section
                 title={t('yearEnd:vehicle.title')}
-                lines={t(`yearEnd:vehicle.lines`)}
+                lines={t('yearEnd:vehicle.lines')}
               />
               <Section
                 title={t('yearEnd:regulations.title')}
-                lines={t(`yearEnd:regulations.lines`)}
+                lines={t('yearEnd:regulations.lines')}
               />
               <Section
                 title={t('yearEnd:graduation.title')}
-                lines={t(`yearEnd:graduation.lines`)}
+                lines={t('yearEnd:graduation.lines')}
               />
               <Section
                 title={t('yearEnd:conclusion.title')}
-                lines={t(`yearEnd:conclusion.lines`)}
+                lines={t('yearEnd:conclusion.lines')}
               />
             </Box>
           </Responsive>
