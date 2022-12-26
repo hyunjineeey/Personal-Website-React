@@ -2,11 +2,11 @@
   "jacob": {
     "name": "Jacob Dalton",
     "title": "Technical Lead and Engineering Manager",
-    "lines": {
-      "0": "I hired Jin at Sentera, and I would consider her an ideal candidate for an early career engineer although she's already accumulated a really solid depth and breadth of experience.",
-      "1": "She has an open mind, a wonderful positive attitude, and an enormous capacity to learn. She naturally gravitates to self improvement (consuming the majority of books I bought for the technical team). I watched her take on a large and deeply technical feature early in her tenure at Sentera that I was skeptical a new hire could deliver, and she completed it beyond far beyond my expectations. Her skills grew rapidly and consistently throughout the time we worked together.",
-      "2": "Any team would be lucky to have Jin."
-    }
+    "lines": [
+      "I hired Jin at Sentera, and I would consider her an ideal candidate for an early career engineer although she's already accumulated a really solid depth and breadth of experience.",
+      "She has an open mind, a wonderful positive attitude, and an enormous capacity to learn. She naturally gravitates to self improvement (consuming the majority of books I bought for the technical team). I watched her take on a large and deeply technical feature early in her tenure at Sentera that I was skeptical a new hire could deliver, and she completed it beyond far beyond my expectations. Her skills grew rapidly and consistently throughout the time we worked together.",
+      "Any team would be lucky to have Jin."
+    ]
   },
   "joe": {
     "name": "Joe Spencer",

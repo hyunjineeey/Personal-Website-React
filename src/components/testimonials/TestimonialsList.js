@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { isObject } from 'lodash'
+import { isObject, size, range, forEach, toString, isArray, map } from 'lodash'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import Divider from '@mui/material/Divider'
@@ -17,14 +17,17 @@ import john from '../../images/testimonials/john.jpeg'
 import jeff from '../../images/testimonials/jeff.jpeg'
 import steven from '../../images/testimonials/steven.jpeg'
 import ming from '../../images/testimonials/ming.jpeg'
+import { sizeHeight } from '@mui/system'
 
 const tes = require('../../locales/en/testimonials.json')
 
 /* <p>{t(`testimonials:${name}.lines`)}</p> */
-
-export default function TestimonialsList () {
+{
+  /* <Box color='text.primary'>{lines}</Box> */
+}
+export default function TestimonialsList() {
   const { t } = useTranslation()
-  const ListBox = ({ name, src, title, lines, isLast = false }) => {
+  const ListBox = ({ name, fname, src, title, lines, isLast = false }) => {
     return (
       <div>
         <ListItem alignItems='flex-start'>
@@ -38,7 +41,15 @@ export default function TestimonialsList () {
                 <Typography variant='body2' color='text.primary'>
                   {title}
                 </Typography>
-                <Box color='text.primary'>{lines}</Box>
+                <Box color='text.primary'>
+                  {isObject(lines) ? (
+                    map(lines, function (index) {
+                      return <p>{t(`testimonials:${fname}.lines.${index}`)}</p>
+                    })
+                  ) : (
+                    <p>{t(`testimonials:${fname}.lines`)}</p>
+                  )}
+                </Box>
               </>
             }
           />
@@ -53,75 +64,53 @@ export default function TestimonialsList () {
       <List sx={{ mt: '-20px', width: '100%', maxWidth: '900px' }}>
         <ListBox
           name={tes.jacob.name}
+          fname='jacob'
           src={jacob}
           title={tes.jacob.title}
-          lines={
-            <div>
-              <p>{t('testimonials:jacob.lines.0')}</p>
-              <p>{t('testimonials:jacob.lines.1')}</p>
-              <p>{t('testimonials:jacob.lines.2')}</p>
-            </div>
-          }
+          lines={tes.jacob.lines}
         />
         <ListBox
           name={tes.joe.name}
+          fname='joe'
           src={joe}
           title={tes.joe.title}
-          lines={<p>{t('testimonials:joe.lines')}</p>}
+          lines={tes.joe.lines}
         />
         <ListBox
           name={tes.dan.name}
+          fname='dan'
           src={dan}
           title={tes.dan.title}
-          lines={
-            <div>
-              <p>{t('testimonials:dan.lines.0')}</p>
-              <p>{t('testimonials:dan.lines.1')}</p>
-              <p>{t('testimonials:dan.lines.2')}</p>
-              <p>{t('testimonials:dan.lines.3')}</p>
-              <p>{t('testimonials:dan.lines.4')}</p>
-              <p>{t('testimonials:dan.lines.5')}</p>
-            </div>
-          }
+          lines={tes.dan.lines}
         />
         <ListBox
           name={tes.john.name}
+          fname='john'
           src={john}
           title={tes.john.title}
-          lines={<p>{t('testimonials:john.lines')}</p>}
+          lines={tes.john.lines}
         />
         <ListBox
           name={tes.jeff.name}
+          fname='jeff'
           src={jeff}
           title={tes.jeff.title}
-          lines={<p>{t('testimonials:jeff.lines')}</p>}
+          lines={tes.jeff.lines}
         />
         <ListBox
           name={tes.steven.name}
+          fname='steven'
           src={steven}
           title={tes.steven.title}
-          lines={
-            <div>
-              <p>{t('testimonials:steven.lines.0')}</p>
-              <p>{t('testimonials:steven.lines.1')}</p>
-              <p>{t('testimonials:steven.lines.2')}</p>
-            </div>
-          }
+          lines={tes.steven.lines}
         />
         <ListBox
           name={tes.ming.name}
+          fname='ming'
           src={ming}
           title={tes.ming.title}
           isLast
-          lines={
-            <div>
-              <p>{t('testimonials:ming.lines.0')}</p>
-              <p>{t('testimonials:ming.lines.1')}</p>
-              <p>{t('testimonials:ming.lines.2')}</p>
-              <p>{t('testimonials:ming.lines.3')}</p>
-              <p>{t('testimonials:ming.lines.4')}</p>
-            </div>
-          }
+          lines={tes.ming.lines}
         />
       </List>
     </Box>
