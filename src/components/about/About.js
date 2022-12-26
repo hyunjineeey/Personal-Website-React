@@ -15,8 +15,8 @@ const useStyles = makeStyles({
     fontSize: '1em',
     letterSpacing: '3px',
     color: '#134db6',
-    textTransform: 'uppercase',
-  },
+    textTransform: 'uppercase'
+  }
 })
 
 const About = () => {
