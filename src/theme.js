@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material";
+import { createTheme } from '@mui/material'
 
 export const theme = createTheme({
   breakpoints: {
@@ -6,9 +6,9 @@ export const theme = createTheme({
       mobile: 0,
       tablet: 640,
       laptop: 1024,
-      desktop: 1200,
-    },
-  },
-});
+      desktop: 1200
+    }
+  }
+})
 
-export default theme;
+export default theme
