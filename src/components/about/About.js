@@ -15,8 +15,8 @@ const useStyles = makeStyles({
     fontSize: '1em',
     letterSpacing: '3px',
     color: '#134db6',
-    textTransform: 'uppercase'
-  }
+    textTransform: 'uppercase',
+  },
 })
 
 const About = () => {
@@ -34,6 +34,7 @@ const About = () => {
         variant='outlined'
         href='../resume.pdf'
         target='_blank'
+        size='small'
         startIcon={<SearchIcon />}
       >
         {t('about:resume')}
