@@ -13,14 +13,14 @@ import { theme, MultilineParagraph, MultilineList } from '../../Styles'
 const Responsive = styled('div')(({ theme, page }) => ({
   [theme.breakpoints.up('mobile')]: {
     paddingLeft: '20px',
-    paddingRight: '20px',
+    paddingRight: '20px'
   },
   [theme.breakpoints.up('tablet')]: {
-    margin: 0,
+    margin: 0
   },
   [theme.breakpoints.up('desktop')]: {
-    margin: 0,
-  },
+    margin: 0
+  }
 }))
 
 const Timeline = ({ week, lines }) => {
@@ -32,7 +32,7 @@ const Timeline = ({ week, lines }) => {
   )
 }
 
-export default function SmartThings() {
+export default function SmartThings () {
   const { t } = useTranslation()
 
   return (
@@ -50,7 +50,7 @@ export default function SmartThings() {
                 textAlign: 'left',
                 width: '100%',
                 maxWidth: '900px',
-                lineHeight: '160%',
+                lineHeight: '160%'
               }}
             >
               <SectionTop
@@ -67,7 +67,7 @@ export default function SmartThings() {
                 style={{
                   maxWidth: 750,
                   maxHeight: 550,
-                  margin: '30px 0 30px 0',
+                  margin: '30px 0 30px 0'
                 }}
               />
               <MultilineParagraph lines={t('smartThings:sub')} />
@@ -155,7 +155,7 @@ export default function SmartThings() {
                     style={{
                       textDecoration: 'none',
                       color: 'blue',
-                      fontStyle: 'italic',
+                      fontStyle: 'italic'
                     }}
                     rel='noreferrer'
                   >

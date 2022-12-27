@@ -1,6 +1,6 @@
 import React from 'react'
 import Typography from '@mui/material/Typography'
-import { Trans, useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 import CardMedia from '@mui/material/CardMedia'
 
 const SectionTop = ({
@@ -10,7 +10,7 @@ const SectionTop = ({
   dateUpdated,
   img,
   alt,
-  sub,
+  sub
 }) => {
   const { t } = useTranslation()
   return (
@@ -37,7 +37,7 @@ const SectionTop = ({
           style={{
             maxWidth: 900,
             maxHeight: 600,
-            borderRadius: '1%',
+            borderRadius: '1%'
           }}
         />
       )}

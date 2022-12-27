@@ -21,7 +21,7 @@ import { MultilineParagraph } from '../../Styles'
 
 const tes = require('../../locales/en/testimonials.json')
 
-export default function TestimonialsList() {
+export default function TestimonialsList () {
   const { t } = useTranslation()
   const ListBox = ({ name, fname, src, title, isLast = false }) => {
     return (

@@ -25,7 +25,7 @@ const resources = {
     projects: projectsEN,
     blog: blogEN,
     yearEnd: yearEndEN,
-    smartThings: smartThingsEN,
+    smartThings: smartThingsEN
   },
   kr: {
     about: aboutKR,
@@ -34,8 +34,8 @@ const resources = {
     projects: projectsKR,
     blog: blogKR,
     yearEnd: yearEndKR,
-    smartThings: smartThingsKR,
-  },
+    smartThings: smartThingsKR
+  }
 }
 
 i18n
@@ -48,8 +48,8 @@ i18n
 
     // keySeparator: false, // we do not use keys in form messages.welcome
     interpolation: {
-      escapeValue: false, // react already safes from xss
-    },
+      escapeValue: false // react already safes from xss
+    }
   })
 
 export default i18n

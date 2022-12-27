@@ -81,7 +81,7 @@ export default function YearEnd() {
                   experience. More information about the internship experience
                   can be found
                   <a
-                    href='https://github.com/hyunjineeey'
+                    href='./SmartThings'
                     style={{ textDecoration: 'none', color: 'blue' }}
                   >
                     here.

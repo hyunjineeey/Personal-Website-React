@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
-export default function BlogList() {
+export default function BlogList () {
   const { t } = useTranslation()
   const Item = ({ title, page, date, sub, isLast = false }) => {
     return (
@@ -61,7 +61,7 @@ export default function BlogList() {
           paddingRight: '20px',
           mt: '-20px',
           width: '100%',
-          maxWidth: '900px',
+          maxWidth: '900px'
         }}
       >
         <Item
