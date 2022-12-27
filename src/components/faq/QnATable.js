@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { useState } from 'react'
 import Box from '@mui/material/Box'
 import { styled } from '@mui/material/styles'
 import Table from '@mui/material/Table'
@@ -9,6 +9,9 @@ import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
 import { Trans, useTranslation } from 'react-i18next'
+import Button from '@mui/material/Button'
+import Typography from '@mui/material/Typography'
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye'
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -36,6 +39,7 @@ function createData (q, n) {
 
 export default function QnATable () {
   const { t } = useTranslation()
+  const [show, setShow] = useState(false)
   const rows = [
     createData(t('qna:dateOfBirth.q'), t('qna:dateOfBirth.a')),
     createData(t('qna:religion.q'), t('qna:religion.a')),
@@ -66,26 +70,49 @@ export default function QnATable () {
   return (
     <Box display='flex' alignItems='center' justifyContent='center'>
       <Box sx={{ ml: 3, mr: 3, mb: 3, width: '100%', maxWidth: '900px' }}>
-        <TableContainer component={Paper}>
-          <Table aria-label='customized table'>
-            <TableHead>
-              <TableRow>
-                <StyledTableCell>{t('qna:question')}</StyledTableCell>
-                <StyledTableCell>{t('qna:answer')}</StyledTableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {rows.map((row) => (
-                <StyledTableRow key={row.q}>
-                  <StyledTableCell component='th' scope='row'>
-                    {row.q}
-                  </StyledTableCell>
-                  <StyledTableCell>{row.n}</StyledTableCell>
-                </StyledTableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
+        <Button
+          variant='contained'
+          size='small'
+          color='error'
+          onClick={() => setShow((prev) => !prev)}
+          startIcon={<RemoveRedEyeIcon />}
+        >
+          {t('qna:moreQuestions')}
+        </Button>
+        {show && (
+          <>
+            <Typography
+              paragraph
+              sx={{ mt: 2, fontSize: 'small' }}
+              variant='subtitle2'
+            >
+              <Trans t={t} i18nKey='qna:comment'>
+                Please don't take it too seriously. <em>It's just for fun.</em>
+              </Trans>
+              😉
+            </Typography>
+            <TableContainer component={Paper}>
+              <Table aria-label='customized table'>
+                <TableHead>
+                  <TableRow>
+                    <StyledTableCell>{t('qna:question')}</StyledTableCell>
+                    <StyledTableCell>{t('qna:answer')}</StyledTableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {rows.map((row) => (
+                    <StyledTableRow key={row.q}>
+                      <StyledTableCell component='th' scope='row'>
+                        {row.q}
+                      </StyledTableCell>
+                      <StyledTableCell>{row.n}</StyledTableCell>
+                    </StyledTableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </>
+        )}
       </Box>
     </Box>
   )
