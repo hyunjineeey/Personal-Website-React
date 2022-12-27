@@ -15,6 +15,10 @@ import yearEndEN from './locales/en/yearEnd.json'
 import yearEndKR from './locales/kr/yearEnd.json'
 import smartThingsEN from './locales/en/smartThings.json'
 import smartThingsKR from './locales/kr/smartThings.json'
+import faqEN from './locales/en/faq.json'
+import faqKR from './locales/kr/faq.json'
+import qnaER from './locales/en/qna.json'
+import qnaKR from './locales/kr/qna.json'
 
 // the translations
 const resources = {
@@ -25,7 +29,9 @@ const resources = {
     projects: projectsEN,
     blog: blogEN,
     yearEnd: yearEndEN,
-    smartThings: smartThingsEN
+    smartThings: smartThingsEN,
+    faq: faqEN,
+    qna: qnaER
   },
   kr: {
     about: aboutKR,
@@ -34,7 +40,9 @@ const resources = {
     projects: projectsKR,
     blog: blogKR,
     yearEnd: yearEndKR,
-    smartThings: smartThingsKR
+    smartThings: smartThingsKR,
+    faq: faqKR,
+    qna: qnaKR
   }
 }
 

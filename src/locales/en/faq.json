@@ -1,0 +1,14 @@
+{
+  "pronounceName": {
+    "question": "How do you pronounce your name?",
+    "answer": "You can pronounce my name as <1>Hyeon-jin</1>. Some of my friends call me 'Jin' or 'Jiny'. For your information, 'Hyunjin Jae' means <3>'Be a Bright Influence on the World'</3>. That is what I am going to do in the future."
+  },
+  "code": {
+    "question": "Why do you code?",
+    "answer": "I believe that coding can change the world. There are many things that can be improved with coding. From small inconveniences to how an entire task is performed. Let's suppose you have some inconveniences in your life and you want to make it better. Coding can fix it. All you need is a computer. You can make a program whenever or wherever you like, such as cafes, parks, even in your dorm. I believe through a completed program, one may receive great help in their daily lives and through this help they could live a happier life. <1>Isn't it cool to contribute to someone's life?</1> I'm putting a lot of energy into coding so that someone can live a better life."
+  },
+  "hobby": {
+    "question": "How do you spend your free time?",
+    "answer": "reading, writing, video, dancing"
+  }
+}

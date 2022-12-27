@@ -1,0 +1,105 @@
+{
+  "comment": "Please don't take it too seriously. It's just for fun.",
+  "question": "Question",
+  "answer": "Answer",
+  "dateOfBirth": {
+    "q": "Date of Birth?",
+    "a": "April 3, 1996"
+  },
+  "religion": {
+    "q": "Religion?",
+    "a": "Irreligion"
+  },
+  "memorableEvent": {
+    "q": "The most memorable event?",
+    "a": "Summer 2022"
+  },
+  "netflix": {
+    "q": "Favorite netflix series?",
+    "a": "Mr.Sunshine"
+  },
+  "21st": {
+    "q": "How was your 21st?",
+    "a": "Alcoholic"
+  },
+  "backToSchool": {
+    "q": "If you could go back to the past in high school, what would you do?",
+    "a": "Read as many books as I can"
+  },
+  "impressiveMoment": {
+    "q": "Most impressive moment recently?",
+    "a": "When a friend of mine said I'm in good company"
+  },
+  "parent": {
+    "q": "Who is a parent for you?",
+    "a": "People for whom I buy gifts without looking at the price"
+  },
+  "sister": {
+    "q": "Who is a sister for you?",
+    "a": "A person to who I can give for free a MacBook that I'm not using"
+  },
+  "eat": {
+    "q": "What did you eat recently?",
+    "a": "Rice and seaweed"
+  },
+  "cry": {
+    "q": "Have you cried recently?",
+    "a": "I cry all the time bc my eyes hurt"
+  },
+  "food": {
+    "q": "Favorite food?",
+    "a": "Tonkatsu"
+  },
+  "love": {
+    "q": "What's love for you?",
+    "a": "A person I miss"
+  },
+  "hardestMoment": {
+    "q": "When's your hardest moment for you?",
+    "a": "When I miss people but I'm not able to meet them"
+  },
+  "worried": {
+    "q": "Are you worried about something?",
+    "a": "My eyes hurt so much and I'm worried about getting worse"
+  },
+  "wish": {
+    "q": "Do you have a wish?",
+    "a": "back to summer 2022"
+  },
+  "call": {
+    "q": "Who did you call recently?",
+    "a": "Dad"
+  },
+  "badHabit": {
+    "q": "Bad habit?",
+    "a": "Eating a big meal once a day"
+  },
+  "important": {
+    "q": "The most important thing in your life?",
+    "a": "People"
+  },
+  "scariest": {
+    "q": "The most scariest thing in your life?",
+    "a": "People"
+  },
+  "peopleTalk": {
+    "q": "How do you want people to talk about you?",
+    "a": "\"She's f**king cool\""
+  },
+  "hotpot": {
+    "q": "Food you wanna eat right now?",
+    "a": "Hotpot"
+  },
+  "confidence": {
+    "q": "What part of your personality are you most confident about?",
+    "a": "Confidence"
+  },
+  "happy": {
+    "q": "Are you happy now?",
+    "a": "\"If you think you are, then you are\" - my dad"
+  },
+  "cool": {
+    "q": "What do you wanna say to yourself?",
+    "a": "Hey Hyunjin! You're f**king cool!"
+  }
+}

@@ -12,17 +12,17 @@ import { theme, MultilineParagraph, MultilineList } from '../../Styles'
 const Responsive = styled('div')(({ theme, page }) => ({
   [theme.breakpoints.up('mobile')]: {
     paddingLeft: '20px',
-    paddingRight: '20px',
+    paddingRight: '20px'
   },
   [theme.breakpoints.up('tablet')]: {
-    margin: 0,
+    margin: 0
   },
   [theme.breakpoints.up('desktop')]: {
-    margin: 0,
-  },
+    margin: 0
+  }
 }))
 
-export default function YearEnd() {
+export default function YearEnd () {
   const { t } = useTranslation()
 
   return (
@@ -40,7 +40,7 @@ export default function YearEnd() {
                 textAlign: 'left',
                 width: '100%',
                 maxWidth: '900px',
-                lineHeight: '160%',
+                lineHeight: '160%'
               }}
             >
               <SectionTop
