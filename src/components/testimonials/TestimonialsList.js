@@ -17,11 +17,11 @@ import jeff from '../../images/testimonials/jeff.jpeg'
 import steven from '../../images/testimonials/steven.jpeg'
 import ming from '../../images/testimonials/ming.jpeg'
 
-import { MultilineTranslation } from '../../Styles'
+import { MultilineParagraph } from '../../Styles'
 
 const tes = require('../../locales/en/testimonials.json')
 
-export default function TestimonialsList () {
+export default function TestimonialsList() {
   const { t } = useTranslation()
   const ListBox = ({ name, fname, src, title, isLast = false }) => {
     return (
@@ -38,7 +38,7 @@ export default function TestimonialsList () {
                   {title}
                 </Typography>
                 <Box color='text.primary'>
-                  <MultilineTranslation
+                  <MultilineParagraph
                     lines={t(`testimonials:${fname}.lines`)}
                   />
                 </Box>

@@ -2,13 +2,12 @@ import * as React from 'react'
 import { styled } from '@mui/material/styles'
 import { ThemeProvider } from '@mui/material'
 import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
 import { Trans, useTranslation } from 'react-i18next'
-import CardMedia from '@mui/material/CardMedia'
 
 import pic2020 from '../../images/blog/2020.JPG'
 import Footer from '../Footer'
-import { theme, MultilineTranslation } from '../../Styles'
+import SectionTop, { SectionTitle } from './SectionTop'
+import { theme, MultilineParagraph, MultilineList } from '../../Styles'
 
 const Responsive = styled('div')(({ theme, page }) => ({
   [theme.breakpoints.up('mobile')]: {
@@ -22,47 +21,6 @@ const Responsive = styled('div')(({ theme, page }) => ({
     margin: 0,
   },
 }))
-
-const TopSection = ({ title, datePublished, dateUpdated, img, alt, sub }) => {
-  const { t } = useTranslation()
-  return (
-    <>
-      <Typography variant='h4' sx={{ fontWeight: 'medium' }}>
-        {title}
-      </Typography>
-      <Typography sx={{ textTransform: 'uppercase' }} variant='subtitle2'>
-        <p>
-          {t('blog:published')}: {datePublished}
-          <br />
-          {t('blog:updated')}: {dateUpdated}
-        </p>
-      </Typography>
-      <CardMedia
-        component='img'
-        image={img}
-        alt={alt}
-        style={{
-          maxWidth: { xs: 350, md: 250 },
-          maxHeight: { xs: 233, md: 167 },
-        }}
-      />
-      <p>{sub}</p>
-    </>
-  )
-}
-
-const SectionTitle = ({ title }) => {
-  return (
-    <>
-      <Typography
-        variant='h6'
-        sx={{ textTransform: 'capitalize', fontWeight: 'bold' }}
-      >
-        {title}
-      </Typography>
-    </>
-  )
-}
 
 export default function YearEnd() {
   const { t } = useTranslation()
@@ -85,7 +43,7 @@ export default function YearEnd() {
                 lineHeight: '160%',
               }}
             >
-              <TopSection
+              <SectionTop
                 title={t('yearEnd:title')}
                 datePublished={t('yearEnd:datePublished')}
                 dateUpdated={t('yearEnd:dateUpdated')}
@@ -107,7 +65,7 @@ export default function YearEnd() {
                   <em>ordinary</em> days without anything special.
                 </Trans>
               </p>
-              <MultilineTranslation lines={t('yearEnd:covid.lines')} />
+              <MultilineParagraph lines={t('yearEnd:covid.lines')} />
 
               <SectionTitle title={t('yearEnd:internship.title')} />
               <p>
@@ -131,9 +89,7 @@ export default function YearEnd() {
               </p>
 
               <SectionTitle title={t('yearEnd:blackLivesMatter.title')} />
-              <MultilineTranslation
-                lines={t('yearEnd:blackLivesMatter.lines')}
-              />
+              <MultilineParagraph lines={t('yearEnd:blackLivesMatter.lines')} />
               <p>
                 <Trans t={t} i18nKey='yearEnd:blackLivesMatter.learning'>
                   There were so many things that I learned from this incident,
@@ -171,7 +127,7 @@ export default function YearEnd() {
               </p>
 
               <SectionTitle title={t('yearEnd:vehicle.title')} />
-              <MultilineTranslation lines={t('yearEnd:vehicle.lines')} />
+              <MultilineParagraph lines={t('yearEnd:vehicle.lines')} />
 
               <SectionTitle title={t('yearEnd:regulations.title')} />
               <p>
@@ -198,9 +154,7 @@ export default function YearEnd() {
                 </Trans>
               </p>
               <ul>
-                <li>{t('yearEnd:regulations.order1')}</li>
-                <li>{t('yearEnd:regulations.order2')}</li>
-                <li>{t('yearEnd:regulations.order3')}</li>
+                <MultilineList lines={t('yearEnd:regulations.order')} />
               </ul>
               <p>
                 <Trans t={t} i18nKey='yearEnd:regulations.secLine'>
@@ -231,13 +185,13 @@ export default function YearEnd() {
                   because losing them is a huge blow to university budgets.
                 </Trans>
               </p>
-              <MultilineTranslation lines={t('yearEnd:regulations.lines')} />
+              <MultilineParagraph lines={t('yearEnd:regulations.lines')} />
 
               <SectionTitle title={t('yearEnd:graduation.title')} />
-              <MultilineTranslation lines={t('yearEnd:graduation.lines')} />
+              <MultilineParagraph lines={t('yearEnd:graduation.lines')} />
 
               <SectionTitle title={t('yearEnd:conclusion.title')} />
-              <MultilineTranslation lines={t('yearEnd:conclusion.lines')} />
+              <MultilineParagraph lines={t('yearEnd:conclusion.lines')} />
             </Box>
           </Responsive>
         </ThemeProvider>

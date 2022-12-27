@@ -1,11 +1,22 @@
 import { createTheme } from '@mui/material'
 
-export const MultilineTranslation = ({ lines }) => {
+export const MultilineParagraph = ({ lines }) => {
   const items = lines?.split('\n')
   return (
     <>
       {items?.map((item) => (
         <p>{item}</p>
+      ))}
+    </>
+  )
+}
+
+export const MultilineList = ({ lines }) => {
+  const items = lines?.split('\n')
+  return (
+    <>
+      {items?.map((item) => (
+        <li>{item}</li>
       ))}
     </>
   )
@@ -17,9 +28,9 @@ export const theme = createTheme({
       mobile: 0,
       tablet: 640,
       laptop: 1024,
-      desktop: 1200
-    }
-  }
+      desktop: 1200,
+    },
+  },
 })
 
 export default theme
