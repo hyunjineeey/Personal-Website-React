@@ -14,11 +14,11 @@ export const MultilineParagraph = ({ lines }) => {
 export const MultilineList = ({ lines }) => {
   const items = lines?.split('\n')
   return (
-    <>
+    <ul>
       {items?.map((item) => (
         <li>{item}</li>
       ))}
-    </>
+    </ul>
   )
 }
 

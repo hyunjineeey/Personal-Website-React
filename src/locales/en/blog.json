@@ -1,15 +1,5 @@
 {
   "readMore": "Read More",
-  "2020": {
-    "title": "2020 Year End Review",
-    "date": "Jan 18, 2021",
-    "sub": "2020 was a tough year for everyone, but it was a bit more special to me. Looking back on the memorable year, I have tried to summarize what happened to me."
-  },
-  "smartThings": {
-    "title": "Summer Internship Experience at SmartThings",
-    "date": "Sep 24, 2020",
-    "sub": "This synthetic monitor performs as a canary for any problems that may arise in the production environment. The synthetic monitoring system measures the time of the process starting with an API call and ending with event delivery."
-  },
   "published": "Published",
   "updated": "Updated"
 }

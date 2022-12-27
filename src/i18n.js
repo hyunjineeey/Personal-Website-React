@@ -13,6 +13,8 @@ import blogEN from './locales/en/blog.json'
 import blogKR from './locales/kr/blog.json'
 import yearEndEN from './locales/en/yearEnd.json'
 import yearEndKR from './locales/kr/yearEnd.json'
+import smartThingsEN from './locales/en/smartThings.json'
+import smartThingsKR from './locales/kr/smartThings.json'
 
 // the translations
 const resources = {
@@ -22,7 +24,8 @@ const resources = {
     testimonials: testimonialsEN,
     projects: projectsEN,
     blog: blogEN,
-    yearEnd: yearEndEN
+    yearEnd: yearEndEN,
+    smartThings: smartThingsEN,
   },
   kr: {
     about: aboutKR,
@@ -30,8 +33,9 @@ const resources = {
     testimonials: testimonialsKR,
     projects: projectsKR,
     blog: blogKR,
-    yearEnd: yearEndKR
-  }
+    yearEnd: yearEndKR,
+    smartThings: smartThingsKR,
+  },
 }
 
 i18n
@@ -44,8 +48,8 @@ i18n
 
     // keySeparator: false, // we do not use keys in form messages.welcome
     interpolation: {
-      escapeValue: false // react already safes from xss
-    }
+      escapeValue: false, // react already safes from xss
+    },
   })
 
 export default i18n

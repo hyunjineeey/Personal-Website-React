@@ -46,10 +46,11 @@ export default function YearEnd() {
               <SectionTop
                 title={t('yearEnd:title')}
                 datePublished={t('yearEnd:datePublished')}
+                minRead={t('yearEnd:minRead')}
                 dateUpdated={t('yearEnd:dateUpdated')}
                 img={pic2020}
                 alt='2020YearEnd'
-                sub={t('blog:2020.sub')}
+                sub={t('yearEnd:sub')}
               />
               <SectionTitle title={t('yearEnd:covid.title')} />
               <p>
@@ -153,9 +154,7 @@ export default function YearEnd() {
                   follows:
                 </Trans>
               </p>
-              <ul>
-                <MultilineList lines={t('yearEnd:regulations.order')} />
-              </ul>
+              <MultilineList lines={t('yearEnd:regulations.order')} />
               <p>
                 <Trans t={t} i18nKey='yearEnd:regulations.secLine'>
                   There are several reasons why the ICE makes this order.

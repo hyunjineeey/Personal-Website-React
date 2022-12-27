@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
-export default function BlogList () {
+export default function BlogList() {
   const { t } = useTranslation()
   const Item = ({ title, page, date, sub, isLast = false }) => {
     return (
@@ -61,20 +61,20 @@ export default function BlogList () {
           paddingRight: '20px',
           mt: '-20px',
           width: '100%',
-          maxWidth: '900px'
+          maxWidth: '900px',
         }}
       >
         <Item
-          title={t('blog:2020.title')}
+          title={t('yearEnd:title')}
           page='/Blog/YearEnd'
-          date={t('blog:2020.date')}
-          sub={t('blog:2020.sub')}
+          date={t('yearEnd:datePublished')}
+          sub={t('yearEnd:sub')}
         />
         <Item
-          title={t('blog:smartThings.title')}
+          title={t('smartThings:title')}
           page='/Blog/SmartThings'
-          date={t('blog:smartThings.date')}
-          sub={t('blog:smartThings.sub')}
+          date={t('smartThings:datePublished')}
+          sub={t('smartThings:sub')}
           isLast
         />
       </List>

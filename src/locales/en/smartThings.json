@@ -1,0 +1,70 @@
+{
+  "title": "Summer Internship Experience at SmartThings",
+  "datePublished": "Sep 24, 2020",
+  "minRead": "• 6 min read",
+  "dateUpdated": "Sep 25, 2020 PM 9:52 CST",
+  "projectOverview": "Project Overview",
+  "sub": "The synthetic monitor performs as a canary for any problems that may arise in the production environment. The synthetic monitoring system measures the time of the process starting with an API call and ending with event delivery.",
+  "projectDate": "Period: May 18, 2020 - August 21, 2020 (14 weeks)\nTeam: IoT execution team\nProject: Synthetic Monitoring (woof)",
+  "timeline": {
+    "title": "Timeline",
+    "week1": {
+      "title": "Week 1-2",
+      "lines": "Recapped Java and Spring Boot\nUnderstood a big picture of the project"
+    },
+    "week3": {
+      "title": "Week 3",
+      "lines": "Started a first phase of the project\nImplemented to read config data and send an event to goalie over HTTP"
+    },
+    "week4": {
+      "title": "Week 4-5",
+      "lines": "Made a mock for the goalie to have a REST API\nImplemented to send the event to the local kinesis mock using AWS Kinesis Java SDK"
+    },
+    "week6": {
+      "title": "Week 6-7",
+      "lines": "Finished putting records into kinesis\nStarted consumer part"
+    },
+    "week8": {
+      "title": "Week 8-9",
+      "lines": "Finished producer and consumer throughout woof, goalie, and kinesis\nStarted “real” synthetic monitor things - time measurement\nHad a race condition problem from Kinesis consuming\nResolved the issue with StateService and Hasp map"
+    },
+    "week10": {
+      "title": "Week 10",
+      "lines": "Added function with the time measurement; avg, min, and max time\nFound and fixed some small bugs that occur in the woof"
+    },
+    "week11": {
+      "title": "Week 11-12",
+      "lines": "Started testing to make sure system quality using Spock and Groovy\nUnderstood what does NullPointerException means\nWatched some useful videos and read about unit test and integration test"
+    },
+    "week13": {
+      "title": "Week 13",
+      "lines": "Fixed bugs from PMD report\nPrepared for the intern presentation"
+    },
+    "week14": {
+      "title": "Week 14",
+      "lines": "Wrote documentation that contains a summary of the internship experience\nFinal review the project, creating README includes general information of it"
+    }
+  },
+  "whatILearned": {
+    "title": "What I Learned",
+    "firstLine": "There are so many things I learned about during the four-month software engineer internship program at SmartThings. In particular, I focused on Java and Spring Boot, which were the most used for the project.",
+    "tools": "Java: Methods, Classes, Inheritance, Polymorphism, and Exceptions, etc.\nSpring Boot: Restful web service, Consuming, Producing, How to use Yaml file, Logging, Dependencies, and Spring Annotation, etc.\nIntellij: Debug, Run, and Gradle, etc.\nGit: Merge, Manage/Switch branch, Commit, Fetch, what does Master and Local means, etc.\nAWS Kinesis: Multithreading with the mock Kinesis stream",
+    "secLine": "I also learned how important testing is. The project is not done just because the coding part has been completed. It is also essential during testing to check the code I have written to make sure it works properly. It was not easy to write a testing code using Groovy because I had no experience in testing. It took some time to get used to it, and I studied harder. In the process of testing, I learned to reorganize the code to make it easier and cleaner. I tested each method focusing on how well the program worked. In the end, I realized that testing is as important as coding.",
+    "program": "Agile Scrum\nJira\nZoom\nSlack",
+    "lastLine": "What made this internship even more special was the full impact of the remote working. As part of the Agile Scrum, all meetings and communications, including stand up meetings, were conducted through Zoom and Slack. Thanks to these programs, we were able to chat effectively without meeting in person. As I had to spend most of my time at home, time management was important, and I was able to reduce confusion by making sure personal and working hours were prioritized early in my internship period. If one day I have to engage in remote working again, then (thanks to this experience) I will be able to get used to it faster."
+  },
+  "whatILiked": {
+    "title": "What I Liked",
+    "lines": "I have met so many amazing people that I collaborated with within this experience. My manager, Jeff Blaisdell, and I had a meeting once a week to discuss the direction of the project. While he described a big picture of the project, my mentor, John Osberg, gave guidance on the details of the project through meetings three times a week. The interest they showed me kept reminded me of I am an important member of this team. Their teamwork was very effective and helped me a lot in getting the project done successfully.\nAs a visual learner, I usually do visualization when learning or expressing something new. There were concepts that I sometimes did not understand, and Jeff and Osberg explained the things that I was working on using images. Thanks to them, I was able to fully understand what was going on and solve the issues I was getting and move on to the next step.\nI was given the freedom to lead the project and go in any direction I wanted. As the project progressed step by step, there were moments when I had to decide what to do next. Each time, they asked me, \"What do you want to do next?\" In the process, I had to choose the direction of the project myself. They always respected my opinion and supported me in the direction I chose. Previously, I had followed a fixed direction because someone else was in a position of power over me. However, during this internship period, I was completely in charge of making the decisions for the next step. This gave me a great sense of responsibility, and when the project was completed, I was so proud of myself.\nWorking in an agile environment taught me techniques of how to break down larger tasks into smaller ones. During the daily standup meetings, we discussed what work had been done the day before, what we are working on that day and any questions that came up. Besides, at the Sprint meeting, which takes place every two weeks, the next goal was set and tickets were assigned accordingly. Working on the Agile Scrum team, I decided on the amount of work, goals, and achievements for myself. It was also a responsibility to achieve my goals within the deadline I promised.\nIn my opinion, the biggest advantage/benefit of being an intern is that you can ask any question you have and meet new gifted people from many different fields. So I used those benefits during this time. Whenever I had a question, I asked people and resolved my curiosity, and I was able to reach out to as many people as possible to make a connection to get a different perspective.\nIn a remote working environment, it was not easy to meet and talk with team members in person. So I asked for one-on-one meetings with them, and during that time I was able to ask questions - about their academic background, career path, how to be a good engineer, how to communicate, work and life balance, goal setting, etc. Not only the team members but also those who were curious and wanted to learn more, I sent a Slack DM to them to request the meeting, and everyone was very supportive - IOS App team manager, Front End team manager, and Principal Software Engineer. They were grateful and saying a lot of good things. It became an opportunity to get closer to the team, and I felt that my understanding was further broadened."
+  },
+  "whatICouldImprove": {
+    "title": "What I Could Improve",
+    "lines": "Programming is a repeat of guessing and checking, continuing to think and try to understand. When things are not working, it is best to take a step back, try to understand the components at play, and then try to understand what the error message is saying. Even though the error is not resolved, there must be learning in the process of contemplating and continuing to try.\nPracticing critical thinking as I approach problems and not being afraid to come up with my own ideas is something that I continue to develop. They will either be great ideas, or a teammate will have a logical reason the idea would not work. By putting the ideas out there though, I can have valuable feedback and I get the opportunity to either put into action or learn about something I have not thought of before.",
+    "lastLine": "The more I learn, the more humble I have to be. I can always improve on staying humble and hustling hard. This field is where new things are constantly being updated. That being said, I should always have the attitude of learning accordingly. I should not hide a passion for <1>anything</1>!"
+  },
+  "conclusion": {
+    "title": "Conclusion",
+    "lines": "Working at SmartThings has been a phenomenal experience. After these four months, I could tell my skills as a software engineer had increased immensely. I learned a lot while at SmartThings about efficient software engineering processes, how a fast-moving startup operates, and good code design and standards, all of which will be very helpful in my future career. I am grateful that I have been able to experience a company that is so dedicated to progress, innovation, and truly taking care of one another. I have been incredibly blessed by and am thankful for this opportunity. Overall, I really enjoyed being part of the internship program at SmartThings with the smart people!",
+    "github": "<1>This link will take you to a Github repository of this project.</1>"
+  }
+}
