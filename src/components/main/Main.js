@@ -16,7 +16,7 @@ const SnsButton = ({ link, color, icon, name }) => {
   return (
     <Button
       href={link}
-      sx={{ width: 85 }}
+      sx={{ width: 90 }}
       target='_blank'
       variant='outlined'
       color={color}
@@ -63,18 +63,18 @@ function Main () {
             name='Email'
           />
           <SnsButton
-            link={github}
-            color='success'
-            icon='fa-brands fa-github'
-            name='Github'
-          />
-        </Box>
-        <Box display='flex' gap={1} sx={{ mt: 1 }}>
-          <SnsButton
             link={linkedIn}
             color='secondary'
             icon='fa-brands fa-linkedin'
             name='LinkedIn'
+          />
+        </Box>
+        <Box display='flex' gap={1} sx={{ mt: 1 }}>
+          <SnsButton
+            link={github}
+            color='success'
+            icon='fa-brands fa-github'
+            name='Github'
           />
           <SnsButton
             link={youtube}

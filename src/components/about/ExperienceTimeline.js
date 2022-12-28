@@ -17,7 +17,7 @@ import { theme } from '../../Styles'
 
 const Responsive = styled('div')(({ theme, page }) => ({
   [theme.breakpoints.up('mobile')]: {
-    marginLeft: '70px'
+    marginLeft: '18%'
   },
   [theme.breakpoints.up('tablet')]: {
     margin: 0
