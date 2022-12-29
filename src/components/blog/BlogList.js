@@ -33,12 +33,14 @@ export default function BlogList () {
                   <Typography
                     variant='body1'
                     color='text.primary'
+                    fontSize='1.1em'
                     sx={{ mt: 2, mb: 2 }}
                   >
                     {sub}
                   </Typography>
                   <Typography
                     variant='subtitle2'
+                    fontSize='0.9em'
                     sx={{ textTransform: 'uppercase' }}
                     color='text.secondary'
                   >

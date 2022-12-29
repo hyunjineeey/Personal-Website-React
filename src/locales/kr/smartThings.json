@@ -5,7 +5,7 @@
   "dateUpdated": "2020년 9월 25일 오후 9:52 CST",
   "projectOverview": "프로젝트 개요",
   "sub": "인턴 기간 동안 진행했던 종합 모니터 시스템은 프로덕션 환경에서 발생할 수 있는 모든 문제에 대해 카나리아 역할을 한다. 이것은 API 호출에서 시작해 이벤트 전달로 끝나는 프로세스 시간을 측정해 기록한다.",
-  "projectDate": "기간: 2020년 5월 18일 - 8월 21일 (14 주)\n팀: IoT execution team\n프로젝트: 종합 모니터 시스템 (woof)",
+  "projectDate": "기간: 2020년 5월 18일 - 8월 21일\n팀: IoT Execution\n프로젝트: 종합 모니터 시스템 (Woof)",
   "timeline": {
     "title": "타임라인",
     "week1": {

@@ -15,7 +15,7 @@ const SectionTop = ({
   const { t } = useTranslation()
   return (
     <>
-      <Typography variant='h4' sx={{ fontWeight: 'medium' }}>
+      <Typography variant='h5' sx={{ fontWeight: 'bold' }}>
         {title}
       </Typography>
       <Typography
@@ -37,7 +37,7 @@ const SectionTop = ({
           style={{
             maxWidth: 900,
             maxHeight: 600,
-            borderRadius: '1%'
+            borderRadius: '10px'
           }}
         />
       )}

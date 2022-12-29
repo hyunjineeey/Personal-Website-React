@@ -4,8 +4,8 @@
   "minRead": "• 6 min read",
   "dateUpdated": "Sep 25, 2020 PM 9:52 CST",
   "projectOverview": "Project Overview",
-  "sub": "The synthetic monitor performs as a canary for any problems that may arise in the production environment. The synthetic monitoring system measures the time of the process starting with an API call and ending with event delivery.",
-  "projectDate": "Period: May 18, 2020 - August 21, 2020 (14 weeks)\nTeam: IoT execution team\nProject: Synthetic Monitoring (woof)",
+  "sub": "The synthetic monitor system performs as a canary for any problems that may arise in the production environment. It measures the time of the process starting with an API call and ending with event delivery.",
+  "projectDate": "Period: May 18, 2020 - August 21, 2020\nTeam: IoT Execution\nProject: Synthetic Monitoring (Woof)",
   "timeline": {
     "title": "Timeline",
     "week1": {

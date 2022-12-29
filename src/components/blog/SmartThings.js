@@ -70,9 +70,10 @@ export default function SmartThings () {
                   margin: '30px 0 30px 0'
                 }}
               />
-              <MultilineParagraph lines={t('smartThings:sub')} />
 
               <MultilineList lines={t('smartThings:projectDate')} />
+
+              <MultilineParagraph lines={t('smartThings:sub')} />
 
               <SectionTitle title={t('smartThings:timeline.title')} />
 
