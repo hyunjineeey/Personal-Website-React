@@ -23,12 +23,8 @@
     "q": "How was your 21st?",
     "a": "Alcoholic"
   },
-  "backToSchool": {
-    "q": "If you could go back to the past in high school, what would you do?",
-    "a": "Read as many books as I can"
-  },
   "impressiveMoment": {
-    "q": "Most impressive moment recently?",
+    "q": "The most impressive moment recently?",
     "a": "When a friend of mine said I'm in good company"
   },
   "eat": {
@@ -55,14 +51,6 @@
     "q": "Do you have a wish?",
     "a": "There's a moment where I want to go back"
   },
-  "call": {
-    "q": "Who did you call recently?",
-    "a": "Dad calls me every day"
-  },
-  "badHabit": {
-    "q": "Bad habit?",
-    "a": "Eating a big meal once a day"
-  },
   "important": {
     "q": "The most important thing in your life?",
     "a": "People"
@@ -85,7 +73,7 @@
   },
   "happy": {
     "q": "Are you happy now?",
-    "a": "\"If you think you are, then you are\" - my dad"
+    "a": "Tbh idk"
   },
   "cool": {
     "q": "What do you wanna say to yourself?",
@@ -93,30 +81,26 @@
   },
   "mbti": {
     "q": "Mbti?",
-    "a": "ENTJ"
+    "a": "Entj"
   },
   "night": {
     "q": "What do you do before bed?",
-    "a": "Writing"
+    "a": "Writing my feelings down"
   },
   "morning": {
     "q": "What do you do after waking up?",
     "a": "Play music on HomePod mini"
   },
-  "lowerbody": {
-    "q": "What's your favorite workout?",
-    "a": "Lower body"
-  },
   "song": {
     "q": "Which song are you listening to recently?",
-    "a": "Love the way you lie"
+    "a": "Running on my mind"
   },
   "drone": {
     "q": "Do you want anything?",
     "a": "Drone"
   },
   "dream": {
-    "q": "What's the most recent dream you had?",
+    "q": "The most recent dream you had?",
     "a": "I said I can't sleep well!"
   },
   "phone": {
@@ -129,18 +113,14 @@
   },
   "tmi": {
     "q": "Today's tmi?",
-    "a": "I did laundry"
-  },
-  "cooking": {
-    "q": "What food are you good at?",
-    "a": "Kimchi stew with pork"
+    "a": "Did car washes!"
   },
   "book": {
-    "q": "What's the most recent book you read?",
+    "q": "The most recent book you read?",
     "a": "Book"
   },
   "fragrance": {
-    "q": "What's your favorite fragrance?",
+    "q": "What fragrance do you use?",
     "a": "Citizen Jill"
   },
   "mavic": {
@@ -152,47 +132,43 @@
     "a": "I like being myself"
   },
   "callORtext": {
-    "q": "전화 문자?",
-    "a": "전화"
-  },
-  "nightORafternoon": {
-    "q": "밤 낮?",
-    "a": "밤"
+    "q": "Calling Vs Texting",
+    "a": "Calling"
   },
   "summerORwinter": {
-    "q": "여름 겨울?",
-    "a": "겨울"
+    "q": "Summer Vs Winter",
+    "a": "Winter"
   },
   "mountainORsea": {
-    "q": "산 바다?",
-    "a": "산"
+    "q": "Mountains Vs Beach",
+    "a": "Mountains"
   },
   "alcoholORcoffee": {
-    "q": "술 커피?",
-    "a": "술"
+    "q": "Alcohol Vs Coffee",
+    "a": "Alcohol"
   },
   "Naeng": {
-    "q": "물냉 비냉?",
-    "a": "물냉"
+    "q": "Mul naengmyeon Vs Bibim naengmyeon",
+    "a": "Mul naengmyeon"
   },
   "beefORpork": {
-    "q": "소고기 돼지고기?",
-    "a": "삼겹살 최고"
+    "q": "Beef Vs Pork?",
+    "a": "Pork belly is the best"
   },
   "meatORkimchi": {
-    "q": "고기만두 김치만두?",
-    "a": "김치만두"
+    "q": "Meat dumplings Vs Kimchi dumplings",
+    "a": "Kimchi dumplings"
   },
   "beerORsoju": {
-    "q": "맥주 소주?",
-    "a": "소주"
+    "q": "Beef Vs Soju",
+    "a": "Soju"
   },
   "pizzaORchicken": {
-    "q": "피자 치킨?",
-    "a": "치킨"
+    "q": "Pizza Vs Chicken",
+    "a": "Chicken"
   },
   "kimichORsoy": {
-    "q": "김치찌개 된장찌개?",
-    "a": "김치찌개"
+    "q": "Kimchi-jjigae Vs Doenjang-jjigae",
+    "a": "Kimchi-jjigae"
   }
 }

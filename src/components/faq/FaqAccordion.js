@@ -55,10 +55,7 @@ export default function FaqAccordion () {
   return (
     <Box display='flex' alignItems='center' justifyContent='center'>
       <Box sx={{ ml: 3, mr: 3, mb: 3, width: '100%', maxWidth: '900px' }}>
-        <Accordion
-          expanded={expanded === 'panel1'}
-          onChange={handleChange('panel1')}
-        >
+        <Accordion>
           <AccordionSummary aria-controls='panel1d-content' id='panel1d-header'>
             <Typography sx={{ textAlign: 'left' }}>
               {t('faq:pronounceName.question')}
