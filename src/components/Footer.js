@@ -54,8 +54,8 @@ const Footer = () => {
       <Divider sx={{ borderBottomWidth: 1, mb: 1 }} />
       <Box
         sx={{
-          paddingLeft: '10%',
-          paddingRight: '10%',
+          paddingLeft: '8%',
+          paddingRight: '8%',
           mb: '10px',
           display: 'flex',
           justifyContent: 'space-between'

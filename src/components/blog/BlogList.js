@@ -59,8 +59,8 @@ export default function BlogList () {
     <Box display='flex' alignItems='center' justifyContent='center'>
       <List
         sx={{
-          paddingLeft: '20px',
-          paddingRight: '20px',
+          paddingLeft: '15px',
+          paddingRight: '15px',
           mt: '-20px',
           width: '100%',
           maxWidth: '900px'

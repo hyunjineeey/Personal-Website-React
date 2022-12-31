@@ -38,7 +38,7 @@ function Main () {
         display='flex'
         alignItems='center'
         justifyContent='center'
-        sx={{ p: 2, mt: 2, flexDirection: 'column' }}
+        sx={{ pt: 1, pb: 2, flexDirection: 'column' }}
       >
         <MainAvatar />
         <Typography
