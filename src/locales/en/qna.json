@@ -12,7 +12,7 @@
     "a": "Irreligion"
   },
   "memorableEvent": {
-    "q": "The most memorable event?",
+    "q": "The most memorable moment?",
     "a": "Summer 2022"
   },
   "netflix": {
@@ -31,25 +31,13 @@
     "q": "Most impressive moment recently?",
     "a": "When a friend of mine said I'm in good company"
   },
-  "parent": {
-    "q": "Who is a parent for you?",
-    "a": "People for whom I buy gifts without looking at the price"
-  },
-  "sister": {
-    "q": "Who is a sister for you?",
-    "a": "A person to who I can give for free a MacBook that I'm not using"
-  },
   "eat": {
     "q": "What did you eat recently?",
-    "a": "Rice and seaweed"
-  },
-  "cry": {
-    "q": "Have you cried recently?",
-    "a": "I cry all the time bc my eyes hurt"
+    "a": "Chipotle"
   },
   "food": {
     "q": "Favorite food?",
-    "a": "Tonkatsu"
+    "a": "Taco"
   },
   "love": {
     "q": "What's love for you?",
@@ -61,15 +49,15 @@
   },
   "worried": {
     "q": "Are you worried about something?",
-    "a": "My eyes hurt so much and I'm worried about getting worse"
+    "a": "I couldn't sleep"
   },
   "wish": {
     "q": "Do you have a wish?",
-    "a": "back to summer 2022"
+    "a": "There's a moment where I want to go back"
   },
   "call": {
     "q": "Who did you call recently?",
-    "a": "Dad"
+    "a": "Dad calls me every day"
   },
   "badHabit": {
     "q": "Bad habit?",
@@ -101,6 +89,110 @@
   },
   "cool": {
     "q": "What do you wanna say to yourself?",
-    "a": "Hey Hyunjin! You're f**king cool!"
+    "a": "You're f**king cool!"
+  },
+  "mbti": {
+    "q": "Mbti?",
+    "a": "ENTJ"
+  },
+  "night": {
+    "q": "What do you do before bed?",
+    "a": "Writing"
+  },
+  "morning": {
+    "q": "What do you do after waking up?",
+    "a": "Play music on HomePod mini"
+  },
+  "lowerbody": {
+    "q": "What's your favorite workout?",
+    "a": "Lower body"
+  },
+  "song": {
+    "q": "Which song are you listening to recently?",
+    "a": "Love the way you lie"
+  },
+  "drone": {
+    "q": "Do you want anything?",
+    "a": "Drone"
+  },
+  "dream": {
+    "q": "What's the most recent dream you had?",
+    "a": "I said I can't sleep well!"
+  },
+  "phone": {
+    "q": "What phone do you use?",
+    "a": "iPhone 14"
+  },
+  "wallpaper": {
+    "q": "What's the wallpaper on your phone?",
+    "a": "The default astronomy theme"
+  },
+  "tmi": {
+    "q": "Today's tmi?",
+    "a": "I did laundry"
+  },
+  "cooking": {
+    "q": "What food are you good at?",
+    "a": "Kimchi stew with pork"
+  },
+  "book": {
+    "q": "What's the most recent book you read?",
+    "a": "Book"
+  },
+  "fragrance": {
+    "q": "What's your favorite fragrance?",
+    "a": "Citizen Jill"
+  },
+  "mavic": {
+    "q": "What do you want to gift yourself?",
+    "a": "Drone!! Mavic!!"
+  },
+  "born": {
+    "q": "If you were to be born again, what would you want to be?",
+    "a": "I like being myself"
+  },
+  "callORtext": {
+    "q": "전화 문자?",
+    "a": "전화"
+  },
+  "nightORafternoon": {
+    "q": "밤 낮?",
+    "a": "밤"
+  },
+  "summerORwinter": {
+    "q": "여름 겨울?",
+    "a": "겨울"
+  },
+  "mountainORsea": {
+    "q": "산 바다?",
+    "a": "산"
+  },
+  "alcoholORcoffee": {
+    "q": "술 커피?",
+    "a": "술"
+  },
+  "Naeng": {
+    "q": "물냉 비냉?",
+    "a": "물냉"
+  },
+  "beefORpork": {
+    "q": "소고기 돼지고기?",
+    "a": "삼겹살 최고"
+  },
+  "meatORkimchi": {
+    "q": "고기만두 김치만두?",
+    "a": "김치만두"
+  },
+  "beerORsoju": {
+    "q": "맥주 소주?",
+    "a": "소주"
+  },
+  "pizzaORchicken": {
+    "q": "피자 치킨?",
+    "a": "치킨"
+  },
+  "kimichORsoy": {
+    "q": "김치찌개 된장찌개?",
+    "a": "김치찌개"
   }
 }
