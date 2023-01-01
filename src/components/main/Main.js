@@ -93,7 +93,7 @@ function Main () {
       <Box>
         <Divider sx={{ borderBottomWidth: 1, mb: 0.2 }} />
         <Typography sx={{ textAlign: 'center', fontSize: '12px' }}>
-          © Hyunjin Jae, 2019 - 2022
+          © Hyunjin Jae, 2019 - 2023
         </Typography>
       </Box>
     </div>

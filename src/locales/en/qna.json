@@ -170,5 +170,13 @@
   "kimichORsoy": {
     "q": "Kimchi-jjigae Vs Doenjang-jjigae",
     "a": "Kimchi-jjigae"
+  },
+  "goodAt": {
+    "q": "What are you good at?",
+    "a": "Everything"
+  },
+  "happiness": {
+    "q": "When are you happiest?",
+    "a": "When I can give my love to someone"
   }
 }

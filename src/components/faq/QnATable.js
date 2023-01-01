@@ -48,22 +48,23 @@ export default function QnATable () {
     createData(t('qna:morning.q'), t('qna:morning.a')),
     createData(t('qna:song.q'), t('qna:song.a')),
     createData(t('qna:worried.q'), t('qna:worried.a')),
-    createData(t('qna:wish.q'), t('qna:wish.a')),
-    createData(t('qna:netflix.q'), t('qna:netflix.a')),
-    createData(t('qna:eat.q'), t('qna:eat.a')),
     createData(t('qna:food.q'), t('qna:food.a')),
+    createData(t('qna:netflix.q'), t('qna:netflix.a')),
     createData(t('qna:love.q'), t('qna:love.a')),
     createData(t('qna:hardestMoment.q'), t('qna:hardestMoment.a')),
+    createData(t('qna:happiness.q'), t('qna:happiness.a')),
+    createData(t('qna:wish.q'), t('qna:wish.a')),
     createData(t('qna:important.q'), t('qna:important.a')),
     createData(t('qna:scariest.q'), t('qna:scariest.a')),
     createData(t('qna:dream.q'), t('qna:dream.a')),
-    createData(t('qna:memorableEvent.q'), t('qna:memorableEvent.a')),
     createData(t('qna:impressiveMoment.q'), t('qna:impressiveMoment.a')),
     createData(t('qna:book.q'), t('qna:book.a')),
+    createData(t('qna:eat.q'), t('qna:eat.a')),
     createData(t('qna:drone.q'), t('qna:drone.a')),
     createData(t('qna:phone.q'), t('qna:phone.a')),
     createData(t('qna:wallpaper.q'), t('qna:wallpaper.a')),
     createData(t('qna:tmi.q'), t('qna:tmi.a')),
+    createData(t('qna:happy.q'), t('qna:happy.a')),
     createData(t('qna:fragrance.q'), t('qna:fragrance.a')),
     createData(t('qna:mavic.q'), t('qna:mavic.a')),
     createData(t('qna:callORtext.q'), t('qna:callORtext.a')),
@@ -78,29 +79,32 @@ export default function QnATable () {
     createData(t('qna:kimichORsoy.q'), t('qna:kimichORsoy.a')),
     createData(t('qna:hotpot.q'), t('qna:hotpot.a')),
     createData(t('qna:peopleTalk.q'), t('qna:peopleTalk.a')),
+    createData(t('qna:goodAt.q'), t('qna:goodAt.a')),
     createData(t('qna:confidence.q'), t('qna:confidence.a')),
     createData(t('qna:born.q'), t('qna:born.a')),
-    createData(t('qna:happy.q'), t('qna:happy.a')),
     createData(t('qna:cool.q'), t('qna:cool.a'))
   ]
 
   return (
     <Box display='flex' alignItems='center' justifyContent='center'>
       <Box sx={{ ml: 3, mr: 3, mb: 3, width: '100%', maxWidth: '900px' }}>
-        <Button
-          variant='contained'
-          size='small'
-          color='error'
-          onClick={() => setShow((prev) => !prev)}
-          startIcon={<RemoveRedEyeIcon />}
-        >
-          {t('qna:moreQuestions')}
-        </Button>
+        <Box sx={{ textAlign: 'left' }}>
+          <Button
+            variant='contained'
+            size='small'
+            color='error'
+            onClick={() => setShow((prev) => !prev)}
+            startIcon={<RemoveRedEyeIcon />}
+            sx={{ fontSize: '10px' }}
+          >
+            {t('qna:moreQuestions')}
+          </Button>
+        </Box>
         {show && (
           <>
             <Typography
               paragraph
-              sx={{ mt: 2, fontSize: 'small' }}
+              sx={{ mt: 2, fontSize: 'small', textAlign: 'left' }}
               variant='subtitle2'
             >
               <Trans t={t} i18nKey='qna:comment'>

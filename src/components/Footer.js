@@ -62,7 +62,7 @@ const Footer = () => {
         }}
       >
         <Typography sx={{ textAlign: 'center', fontSize: '12px' }}>
-          © Hyunjin Jae, 2019 - 2022
+          © Hyunjin Jae, 2019 - 2023
         </Typography>
         <SnsIcons />
       </Box>
