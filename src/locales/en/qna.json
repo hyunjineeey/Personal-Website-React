@@ -29,7 +29,7 @@
   },
   "eat": {
     "q": "What did you eat recently?",
-    "a": "Chipotle"
+    "a": "Sushi"
   },
   "food": {
     "q": "Favorite food?",
@@ -178,5 +178,9 @@
   "happiness": {
     "q": "When are you happiest?",
     "a": "When I can give my love to someone"
+  },
+  "twenty": {
+    "q": "How was your 21st?",
+    "a": "Alcoholic"
   }
 }
