@@ -10,6 +10,7 @@ import YearEnd from './components/blog/YearEnd'
 import SmartThings from './components/blog/SmartThings'
 import Testimonials from './components/testimonials/Testimonials'
 import Faq from './components/faq/Faq'
+import Books from './components/books/Books'
 import ScrollToTop from './components/ScrollToTop'
 
 function App () {
@@ -26,6 +27,7 @@ function App () {
         <Route path='Blog/SmartThings' element={<SmartThings />} />
         <Route path='Testimonials' element={<Testimonials />} />
         <Route path='Faq' element={<Faq />} />
+        <Route path='Books' element={<Books />} />
       </Routes>
     </div>
   )

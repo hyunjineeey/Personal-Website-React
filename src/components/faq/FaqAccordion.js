@@ -117,7 +117,28 @@ export default function FaqAccordion () {
           </AccordionSummary>
           <AccordionDetails>
             <Typography sx={{ textAlign: 'left' }}>
-              {t('faq:hobby.answer')}
+              <Trans t={t} i18nKey='faq:hobby.answer'>
+                It might sound cliché, but I like to read
+                <a
+                  href='./Books'
+                  style={{
+                    textDecoration: 'none',
+                    color: 'blue'
+                  }}
+                  rel='noreferrer'
+                >
+                  books
+                </a>
+                and write in my spare time. Reading and writing help clear my
+                mind. When I read, it feels like the words are talking to me and
+                I'm communicating with the author. When I write something down
+                about my feelings or emotions, I'm facing myself and I really
+                enjoy the time. I'm also interested in creating videos so I
+                capture my daily life and edit videos. I like learning new
+                things from a completely different world and a few weeks ago (as
+                of 12-30-2022), I registered for a hip-hop dance class! Who
+                knows if I will become a k-pop dancer??🤭
+              </Trans>
             </Typography>
           </AccordionDetails>
         </Accordion>
