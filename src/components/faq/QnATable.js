@@ -44,7 +44,22 @@ export default function QnATable () {
     createData(t('qna:dateOfBirth.q'), t('qna:dateOfBirth.a')),
     createData(t('qna:religion.q'), t('qna:religion.a')),
     createData(t('qna:mbti.q'), t('qna:mbti.a')),
-    createData(t('qna:night.q'), t('qna:night.a')),
+    createData(
+      t('qna:night.q'),
+      <Trans t={t} i18nKey='qna:night.a'>
+        Writing
+        <a
+          href='./Writing'
+          style={{
+            textDecoration: 'none',
+            color: 'blue'
+          }}
+          rel='noreferrer'
+        >
+          my feelings down
+        </a>
+      </Trans>
+    ),
     createData(t('qna:morning.q'), t('qna:morning.a')),
     createData(t('qna:song.q'), t('qna:song.a')),
     createData(t('qna:worried.q'), t('qna:worried.a')),
@@ -135,6 +150,12 @@ export default function QnATable () {
             </TableContainer>
           </>
         )}
+        <Typography
+          variant='subtitle2'
+          sx={{ mt: 2, mb: -1, textAlign: 'left', fontStyle: 'italic' }}
+        >
+          {t('shared:lastUpdated')}: {t('shared:faqLastUpdated')}
+        </Typography>
       </Box>
     </Box>
   )

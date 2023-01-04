@@ -85,7 +85,7 @@
   },
   "night": {
     "q": "What do you do before bed?",
-    "a": "Writing my feelings down"
+    "a": "Writing my feelings down<"
   },
   "morning": {
     "q": "What do you do after waking up?",

@@ -2,17 +2,14 @@ import React from 'react'
 import Box from '@mui/material/Box'
 
 import Footer from '../Footer'
-import Accordion from './FaqAccordion'
-import QnATable from './QnATable'
 
-const Faq = () => {
+const Writing = () => {
   return (
     <Box sx={{ textAlign: 'center' }}>
-      <Accordion />
-      <QnATable />
+      Writing
       <Footer />
     </Box>
   )
 }
 
-export default Faq
+export default Writing

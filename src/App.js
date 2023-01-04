@@ -11,6 +11,7 @@ import SmartThings from './components/blog/SmartThings'
 import Testimonials from './components/testimonials/Testimonials'
 import Faq from './components/faq/Faq'
 import Books from './components/books/Books'
+import Writing from './components/writing/Writing'
 import ScrollToTop from './components/ScrollToTop'
 
 function App () {
@@ -28,6 +29,7 @@ function App () {
         <Route path='Testimonials' element={<Testimonials />} />
         <Route path='Faq' element={<Faq />} />
         <Route path='Books' element={<Books />} />
+        <Route path='Writing' element={<Writing />} />
       </Routes>
     </div>
   )
