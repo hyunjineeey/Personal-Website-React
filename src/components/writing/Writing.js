@@ -3,18 +3,20 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import { map } from 'lodash'
 import Carousel from 'react-multi-carousel'
-import 'react-multi-carousel/lib/styles.css'
+import Button from '@mui/material/Button'
+import Pagination from '@mui/material/Pagination'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ArrowBackIcon from '@mui/icons-material/ArrowBack'
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 
+import 'react-multi-carousel/lib/styles.css'
 import './Carousel.css'
 
 import Footer from '../Footer'
-import { maxWidth } from '@mui/system'
-// import Carousel, { CarouselItem } from './Carousel'
 const writing = require('./writing.json')
 
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 1
   },
@@ -32,49 +34,91 @@ const responsive = {
   }
 }
 
+const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
+  const {
+    carouselState: { currentSlide }
+  } = rest
+  return (
+    <div className='carousel-button-group'>
+      <Button
+        className={currentSlide === 0 ? 'disable' : ''}
+        onClick={() => previous()}
+        variant='contained'
+        size='small'
+        sx={{ mr: 2, mt: 2 }}
+      >
+        Prev
+      </Button>
+      <Button
+        variant='contained'
+        size='small'
+        onClick={() => next()}
+        sx={{ mt: 2 }}
+      >
+        Next
+      </Button>
+    </div>
+  )
+}
+
+const arrowStyle = {
+  borderRadius: '50%',
+  //   background: 'rgb(180, 180, 180)',
+  background: 'transparent',
+  border: 0,
+  color: '#424242'
+}
+const CustomRight = ({ onClick }) => (
+  <button className='arrow right' onClick={onClick} style={arrowStyle}>
+    <ArrowForwardIcon style={{ fontSize: '13px' }} />
+  </button>
+)
+const CustomLeft = ({ onClick }) => (
+  <button className='arrow left' onClick={onClick} style={arrowStyle}>
+    <ArrowBackIcon style={{ fontSize: '13px' }} />
+  </button>
+)
+
 const Writing = () => {
   return (
     <Box sx={{ textAlign: 'center' }}>
-      <Carousel
-        showDots
-        responsive={responsive}
-        infinite
-        dotListClass='custom-dot-list-style'
-        itemClass='carousel-item'
-      >
-        {map(writing.lines, (line) => (
-          <Box sx={{ ml: 2, mr: 2, mb: 4 }}>
-            <Typography
+      <Box sx={{ width: '100%' }}>
+        <Carousel
+          showDots
+          responsive={responsive}
+          infinite
+          dotListClass='custom-dot-list-style'
+          arrows
+          customRightArrow={<CustomRight />}
+          customLeftArrow={<CustomLeft />}
+          //   customButtonGroup={<ButtonGroup />}
+          //   renderButtonGroupOutside
+        >
+          {map(writing.lines, (line) => (
+            <Box
               sx={{
-                whiteSpace: 'pre-wrap',
-                lineHeight: '150%',
-                textAlign: 'left',
-                fontSize: '15px'
+                ml: 4,
+                mr: 4,
+                mb: 4,
+                textAlign: 'center'
               }}
             >
-              {line}
-            </Typography>
-          </Box>
-        ))}
+              <Typography
+                sx={{
+                  whiteSpace: 'pre-wrap',
+                  lineHeight: '150%',
+                  display: 'inline-block',
+                  textAlign: 'left',
+                  fontSize: '15px'
+                }}
+              >
+                {line}
+              </Typography>
+            </Box>
+          ))}
+        </Carousel>
+      </Box>
 
-        {/* <div
-          style={{
-            whiteSpace: 'pre',
-            lineHeight: '150%',
-            textAlign: 'left'
-          }}
-        >
-          {writing.lines[0]}
-        </div>
-        <div>{writing.lines[1]}</div>
-        <div>{writing.lines[2]}</div> */}
-      </Carousel>
-
-      {/* <Carousel>
-        {map(writing.lines, (line) => (
-          <CarouselItem>{line}</CarouselItem>
-        ))}
-      </Carousel> */}
       <Footer />
     </Box>
   )
