@@ -1,26 +1,25 @@
 .carousel {
   overflow: hidden;
-  height: 100%;
+  /* background-color: beige; */
 }
 
 .inner {
   white-space: nowrap;
   transition: transform 0.3s;
+  /* background-color: #00ffff; */
 }
 
 .carousel-item {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  overflow: scroll;
-  /* background-color: green;
-  color: #fff; */
 }
 
 .indicators {
   display: flex;
   justify-content: center;
-  height: 25px;
+  /* height: 25px; */
+  margin-bottom: 10px;
 }
 
 .indicators > button {
@@ -31,3 +30,18 @@
   background-color: green;
   color: #fff;
 }
+
+/* .arrow {
+  position: absolute;
+  top: 50%;
+}
+
+.right {
+  right: 0;
+  margin-right: 5px;
+}
+
+.left {
+  left: 0;
+  margin-left: 5px;
+} */

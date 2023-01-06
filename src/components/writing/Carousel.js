@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
+import Paper from '@mui/material/Paper'
 import Button from '@mui/material/Button'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
@@ -51,40 +52,54 @@ const Carousel = ({ children, writing }) => {
 
   return (
     <div {...handlers} className='carousel'>
-      <div className='indicators'>
-        <Typography sx={{ textAlign: 'center', alignContent: 'center' }}>
+      <Box
+        sx={{
+          mb: 2,
+          display: 'flex',
+          flexDirection: 'column',
+          height: 400,
+          overflow: 'hidden',
+          overflowY: 'scroll'
+        }}
+      >
+        <div
+          className='inner'
+          style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+        >
+          {React.Children.map(children, (child, index) => {
+            return React.cloneElement(child, { width: '100%' })
+          })}
+        </div>
+      </Box>
+      <div
+        className='indicators'
+        style={{
+          alignItems: 'center',
+          flexWrap: 'wrap'
+        }}
+      >
+        {/* <Typography sx={{ textAlign: 'center', alignContent: 'center' }}>
           최신
-        </Typography>
-        <Button style={arrowStyle}>
+        </Typography> */}
+        <button style={arrowStyle}>
           <ArrowBackIcon
             onClick={() => {
               updateIndex(activeIndex - 1)
             }}
-            style={{ fontSize: '15px' }}
+            style={{ fontSize: '11px' }}
           />
-        </Button>
-        <Typography sx={{ textAlign: 'center', alignContent: 'center' }}>
+        </button>
+        <Typography sx={{ fontSize: '12px' }}>
           {activeIndex + 1} / {size(writing.lines)}
         </Typography>
-        <Button style={arrowStyle}>
+        <button style={arrowStyle}>
           <ArrowForwardIcon
             onClick={() => {
               updateIndex(activeIndex + 1)
             }}
-            style={{ fontSize: '15px' }}
+            style={{ fontSize: '11px' }}
           />
-        </Button>
-        <Typography sx={{ textAlign: 'center', alignContent: 'center' }}>
-          예전
-        </Typography>
-      </div>
-      <div
-        className='inner'
-        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-      >
-        {React.Children.map(children, (child, index) => {
-          return React.cloneElement(child, { width: '100%' })
-        })}
+        </button>
       </div>
     </div>
   )
