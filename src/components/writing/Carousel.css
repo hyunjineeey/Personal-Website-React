@@ -1,5 +1,6 @@
 .carousel {
   overflow: hidden;
+  height: 100%;
 }
 
 .inner {
@@ -11,9 +12,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
-  height: auto;
-  /* overflow: auto; */
+  overflow: scroll;
   /* background-color: green;
   color: #fff; */
 }
