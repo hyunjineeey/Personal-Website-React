@@ -18,7 +18,6 @@
 .indicators {
   display: flex;
   justify-content: center;
-  /* height: 25px; */
   margin-bottom: 10px;
 }
 
@@ -30,18 +29,3 @@
   background-color: green;
   color: #fff;
 }
-
-/* .arrow {
-  position: absolute;
-  top: 50%;
-}
-
-.right {
-  right: 0;
-  margin-right: 5px;
-}
-
-.left {
-  left: 0;
-  margin-left: 5px;
-} */

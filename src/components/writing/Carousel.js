@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
-import Paper from '@mui/material/Paper'
-import Button from '@mui/material/Button'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import { size } from 'lodash'
@@ -78,9 +76,6 @@ const Carousel = ({ children, writing }) => {
           flexWrap: 'wrap'
         }}
       >
-        {/* <Typography sx={{ textAlign: 'center', alignContent: 'center' }}>
-          최신
-        </Typography> */}
         <button style={arrowStyle}>
           <ArrowBackIcon
             onClick={() => {
