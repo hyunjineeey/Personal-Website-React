@@ -182,5 +182,17 @@
   "twenty": {
     "q": "How was your 21st?",
     "a": "Alcoholic"
+  },
+  "afraid": {
+    "q": "What are you most afraid of losing?",
+    "a": "People I love"
+  },
+  "makeHappy": {
+    "q": "What makes you happy?",
+    "a": "When people I love are happy"
+  },
+  "makeCry": {
+    "q": "What makes you cry?",
+    "a": "I cry all the time bc my eyes hurt"
   }
 }
