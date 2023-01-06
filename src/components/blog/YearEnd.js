@@ -82,7 +82,7 @@ export default function YearEnd () {
                   can be found
                   <a
                     href='./SmartThings'
-                    style={{ textDecoration: 'none', color: 'blue' }}
+                    style={{ textDecoration: 'none', color: '#1876d1' }}
                   >
                     here.
                   </a>
@@ -143,7 +143,7 @@ export default function YearEnd () {
                   <a
                     href='https://www.ice.gov/news/releases/sevp-modifies-temporary-exemptions-nonimmigrant-students-taking-online-courses-during#wcm-survey-target-id'
                     target='_blank'
-                    style={{ textDecoration: 'none', color: 'blue' }}
+                    style={{ textDecoration: 'none', color: '#1876d1' }}
                     rel='noreferrer'
                   >
                     U.S. Immigration and Customs
@@ -162,7 +162,7 @@ export default function YearEnd () {
                   <a
                     href='https://abcnews.go.com/Politics/trump-insists-schools-open-fall-local-authorities-hold/story?id=71648610'
                     target='_blank'
-                    style={{ textDecoration: 'none', color: 'blue' }}
+                    style={{ textDecoration: 'none', color: '#1876d1' }}
                     rel='noreferrer'
                   >
                     ABC News
@@ -173,7 +173,7 @@ export default function YearEnd () {
                   <a
                     href='https://www.npr.org/sections/coronavirus-live-updates/2020/07/06/888026874/ice-foreign-students-must-leave-the-u-s-if-their-colleges-go-online-only-this-fa'
                     target='_blank'
-                    style={{ textDecoration: 'none', color: 'blue' }}
+                    style={{ textDecoration: 'none', color: '#1876d1' }}
                     rel='noreferrer'
                   >
                     NPR News

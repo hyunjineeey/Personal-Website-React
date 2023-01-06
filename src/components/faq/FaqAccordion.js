@@ -70,7 +70,7 @@ export default function FaqAccordion () {
                   target='_blank'
                   style={{
                     textDecoration: 'none',
-                    color: 'blue',
+                    color: '#1876d1',
                     fontStyle: 'italic'
                   }}
                   rel='noreferrer'
@@ -123,7 +123,7 @@ export default function FaqAccordion () {
                   href='./Books'
                   style={{
                     textDecoration: 'none',
-                    color: 'blue'
+                    color: '#1876d1'
                   }}
                   rel='noreferrer'
                 >

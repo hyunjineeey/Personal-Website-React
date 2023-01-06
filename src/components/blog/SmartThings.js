@@ -155,7 +155,7 @@ export default function SmartThings () {
                     target='_blank'
                     style={{
                       textDecoration: 'none',
-                      color: 'blue',
+                      color: '#1876d1',
                       fontStyle: 'italic'
                     }}
                     rel='noreferrer'
