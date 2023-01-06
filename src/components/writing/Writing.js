@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import { map } from 'lodash'
+import { map, size } from 'lodash'
 import Carousel from 'react-multi-carousel'
 import Button from '@mui/material/Button'
 import Pagination from '@mui/material/Pagination'
@@ -68,6 +68,7 @@ const arrowStyle = {
   border: 0,
   color: '#424242'
 }
+
 const CustomRight = ({ onClick }) => (
   <button className='arrow right' onClick={onClick} style={arrowStyle}>
     <ArrowForwardIcon style={{ fontSize: '13px' }} />
@@ -79,18 +80,54 @@ const CustomLeft = ({ onClick }) => (
   </button>
 )
 
+const CustomDot = ({ onMove, index, onClick, active }) => {
+  // onMove means if dragging or swiping in progress.
+  // active is provided by this lib for checking if the item is active or not.
+  return (
+    <li className={active ? 'active' : 'inactive'} onClick={() => onClick()}>
+      {index + 1}
+    </li>
+  )
+}
+
 const Writing = () => {
+  const [current, setCurrent] = useState(null)
+  const [count, setCount] = useState()
+
   return (
     <Box sx={{ textAlign: 'center' }}>
       <Box sx={{ width: '100%' }}>
         <Carousel
           showDots
+          ref={(el) => {
+            if (el) {
+              var slidesToShow = el.state.slidesToShow
+              var currentSlide = el.state.currentSlide
+
+              setCurrent(slidesToShow + currentSlide)
+            }
+          }}
           responsive={responsive}
           infinite
           dotListClass='custom-dot-list-style'
           arrows
           customRightArrow={<CustomRight />}
           customLeftArrow={<CustomLeft />}
+          containerClass='carousel-with-custom-dots'
+          //   afterChange={(previousSlide, { currentSlide, onMove }) => {
+          //     console.log('previousSlide', previousSlide)
+          //     console.log('currentSlide', currentSlide)
+          //     console.log('onMove', onMove)
+          //     setCount(previousSlide)
+          //   }}
+          //   beforeChange={(nextSlide, { currentSlide, onMove }) => {
+          //     console.log('nextSlide', nextSlide)
+          //     console.log('currentSlide', currentSlide)
+          //     console.log('onMove', onMove)
+          //     if (count == size(writing.lines)) setCount(1)
+          //     else setCount(currentSlide)
+          //   }}
+          //   customDot={<CustomDot />}
           //   customButtonGroup={<ButtonGroup />}
           //   renderButtonGroupOutside
         >
@@ -117,6 +154,9 @@ const Writing = () => {
             </Box>
           ))}
         </Carousel>
+        <p>
+          {count} / {size(writing.lines)}
+        </p>
       </Box>
 
       <Footer />
