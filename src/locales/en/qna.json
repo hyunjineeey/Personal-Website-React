@@ -85,7 +85,7 @@
   },
   "night": {
     "q": "What do you do before bed?",
-    "a": "Writing my feelings down<"
+    "a": "Journaling"
   },
   "morning": {
     "q": "What do you do after waking up?",
@@ -101,7 +101,7 @@
   },
   "dream": {
     "q": "The most recent dream you had?",
-    "a": "I said I can't sleep well!"
+    "a": "I said I couldn't sleep well!"
   },
   "phone": {
     "q": "What phone do you use?",
@@ -124,8 +124,8 @@
     "a": "Citizen Jill"
   },
   "mavic": {
-    "q": "What do you want to gift yourself?",
-    "a": "Drone!! Mavic!!"
+    "q": "What do you want for your birthday?",
+    "a": "😍Drone😍Mavic😍"
   },
   "born": {
     "q": "If you were to be born again, what would you want to be?",

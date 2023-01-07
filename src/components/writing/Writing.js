@@ -13,6 +13,7 @@ const Writing = () => {
     <Box sx={{ textAlign: 'center' }}>
       <Box sx={{ ml: 3, mr: 3 }}>
         <Carousel writing={writing}>
+          <CarouselItem>{writing.main}</CarouselItem>
           {map(writing.lines, (line) => (
             <CarouselItem>{line}</CarouselItem>
           ))}

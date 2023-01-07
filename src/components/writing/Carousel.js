@@ -85,7 +85,7 @@ const Carousel = ({ children, writing }) => {
           />
         </button>
         <Typography sx={{ fontSize: '12px' }}>
-          {activeIndex + 1} / {size(writing.lines)}
+          {activeIndex + 1} / {size(writing.lines) + 1}
         </Typography>
         <button style={arrowStyle}>
           <ArrowForwardIcon
@@ -96,6 +96,7 @@ const Carousel = ({ children, writing }) => {
           />
         </button>
       </div>
+      <Typography sx={{ mt: -1, fontSize: '12px' }}>최신순</Typography>
     </div>
   )
 }
