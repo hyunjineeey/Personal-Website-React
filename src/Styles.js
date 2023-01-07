@@ -1,19 +1,5 @@
 import { createTheme } from '@mui/material'
 
-export const MultilineBreak = ({ lines }) => {
-  const items = lines?.split('\b')
-
-  return (
-    <>
-      {items?.map((item) => (
-        <p style={{ whiteSpace: 'pre', lineHeight: '150%', textAlign: 'left' }}>
-          {item}
-        </p>
-      ))}
-    </>
-  )
-}
-
 export const MultilineParagraph = ({ lines }) => {
   const items = lines?.split('\n')
   return (
