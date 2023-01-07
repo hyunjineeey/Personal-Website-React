@@ -16,7 +16,8 @@ export const CarouselItem = ({ children, width }) => {
         width,
         whiteSpace: 'pre-wrap',
         lineHeight: '150%',
-        textAlign: 'left'
+        textAlign: 'left',
+        fontSize: '0.9em'
       }}
     >
       {children}
