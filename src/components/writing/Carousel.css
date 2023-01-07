@@ -1,12 +1,10 @@
 .carousel {
   overflow: hidden;
-  /* background-color: beige; */
 }
 
 .inner {
   white-space: nowrap;
   transition: transform 0.3s;
-  /* background-color: #00ffff; */
 }
 
 .carousel-item {

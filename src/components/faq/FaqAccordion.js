@@ -46,11 +46,6 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 export default function FaqAccordion () {
   const { t } = useTranslation()
-  // const [expanded, setExpanded] = React.useState('panel1')
-
-  // const handleChange = (panel) => (event, newExpanded) => {
-  //   setExpanded(newExpanded ? panel : false)
-  // }
 
   return (
     <Box display='flex' alignItems='center' justifyContent='center'>

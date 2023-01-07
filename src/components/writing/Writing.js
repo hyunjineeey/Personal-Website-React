@@ -2,7 +2,6 @@ import React from 'react'
 import Box from '@mui/material/Box'
 import { map } from 'lodash'
 import Carousel, { CarouselItem } from './Carousel'
-
 import 'react-multi-carousel/lib/styles.css'
 
 import Footer from '../Footer'
