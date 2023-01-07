@@ -68,13 +68,13 @@ export default function BlogList () {
       >
         <Item
           title={t('yearEnd:title')}
-          page='/Blog/YearEnd'
+          page='/blog/year-end'
           date={t('yearEnd:datePublished')}
           sub={t('yearEnd:sub')}
         />
         <Item
           title={t('smartThings:title')}
-          page='/Blog/SmartThings'
+          page='/blog/smartthings'
           date={t('smartThings:datePublished')}
           sub={t('smartThings:sub')}
           isLast

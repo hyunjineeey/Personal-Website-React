@@ -21,15 +21,15 @@ function App () {
       <TopAppBar />
       <Routes>
         <Route path='/' element={<Main />} />
-        <Route path='About' element={<About />} />
-        <Route path='Projects' element={<Projects />} />
-        <Route path='Blog' element={<Blog />} />
-        <Route path='Blog/YearEnd' element={<YearEnd />} />
-        <Route path='Blog/SmartThings' element={<SmartThings />} />
-        <Route path='Testimonials' element={<Testimonials />} />
-        <Route path='Faq' element={<Faq />} />
-        <Route path='Books' element={<Books />} />
-        <Route path='Writing' element={<Writing />} />
+        <Route path='about' element={<About />} />
+        <Route path='projects' element={<Projects />} />
+        <Route path='blog' element={<Blog />} />
+        <Route path='blog/year-end' element={<YearEnd />} />
+        <Route path='blog/smartthings' element={<SmartThings />} />
+        <Route path='testimonials' element={<Testimonials />} />
+        <Route path='faq' element={<Faq />} />
+        <Route path='books' element={<Books />} />
+        <Route path='writing' element={<Writing />} />
       </Routes>
     </div>
   )

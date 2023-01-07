@@ -25,7 +25,6 @@ const About = () => {
 
   return (
     <Box sx={{ textAlign: 'center' }}>
-      <h1 />
       <Typography className={classes.title} sx={{ fontWeight: 'bold' }}>
         {t('about:experience')} / {t('about:education')}
       </Typography>

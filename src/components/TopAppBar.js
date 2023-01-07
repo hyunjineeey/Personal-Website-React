@@ -15,7 +15,7 @@ import '/node_modules/flag-icons/css/flag-icons.min.css'
 import i18n from '../i18n'
 
 function TopAppBar () {
-  const pages = ['About', 'Projects', 'Testimonials', 'Blog', 'FAQ']
+  const pages = ['about', 'projects', 'testimonials', 'blog', 'faq']
   const [anchorElNav, setAnchorElNav] = React.useState(null)
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget)

@@ -44,7 +44,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: '1px solid rgba(0, 0, 0, .125)'
 }))
 
-export default function FaqAccordion() {
+export default function FaqAccordion () {
   const { t } = useTranslation()
   // const [expanded, setExpanded] = React.useState('panel1')
 
@@ -120,7 +120,7 @@ export default function FaqAccordion() {
               <Trans t={t} i18nKey='faq:hobby.answer'>
                 It might sound cliché, but I like to read
                 <a
-                  href='./Books'
+                  href='./books'
                   style={{
                     textDecoration: 'none',
                     color: '#1876d1'

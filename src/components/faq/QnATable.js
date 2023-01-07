@@ -79,7 +79,7 @@ export default function QnATable () {
       <Trans t={t} i18nKey='qna:night.a'>
         Writing
         <a
-          href='./Writing'
+          href='./writing'
           style={{
             textDecoration: 'none',
             color: '#1876d1'
