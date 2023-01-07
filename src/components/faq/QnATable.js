@@ -33,11 +33,11 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   }
 }))
 
-function createData(q, n) {
+function createData (q, n) {
   return { q, n }
 }
 
-export default function QnATable() {
+export default function QnATable () {
   const { t } = useTranslation()
   const [show, setShow] = useState(false)
   const rows = [

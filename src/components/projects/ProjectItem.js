@@ -59,6 +59,8 @@ const Project = ({ title, subtitle, btn, linkToSource, linkToDemo }) => {
         {showTools('Ocaml')}
         {showTools('MySQL')}
         {showTools('PHP')}
+        {showTools('React')}
+        {showTools('Material UI')}
       </Box>
     </Grid>
   )
@@ -79,6 +81,12 @@ export default function ProjectItem () {
         rowSpacing={3}
         columnSpacing={{ xs: 2, sm: 2, md: 3 }}
       >
+        <Project
+          title={t('projects:personalWebsite.title')}
+          subtitle={t('projects:personalWebsite.sub')}
+          btn={['Source', 'React', 'Material UI']}
+          linkToSource='https://github.com/hyunjineeey/Personal-Website-React'
+        />
         <Project
           title={t('projects:foodTruckFinder.title')}
           subtitle={t('projects:foodTruckFinder.sub')}
@@ -117,12 +125,6 @@ export default function ProjectItem () {
           linkToSource='https://github.com/hyunjineeey/Chat-Server'
           linkToDemo='https://www.youtube.com/watch?v=8Csnp6ynyqc&ab_channel=Hyunjin'
         />
-        {/* <Project
-          title={p.personalWebsite.title}
-          subtitle={p.personalWebsite.sub}
-          btn={['Source', 'Bootstrap', 'HTML', 'CSS', 'JavaScript', 'jQuery']}
-          linkToSource='https://github.com/hyunjineeey/Personal-Website'
-        /> */}
         <Project
           title={t('projects:eventFilter.title')}
           subtitle={t('projects:eventFilter.sub')}

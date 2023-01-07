@@ -1,4 +1,8 @@
 {
+  "personalWebsite": {
+    "title": "Personal Website",
+    "sub": "Converted from vanilla JavaScript that I implemented in 2019 to React"
+  },
   "foodTruckFinder": {
     "title": "Food Truck Finder",
     "sub": "A command line interface that prints out a list of food trucks in San Francisco that are open at the current date and current time, when the program is being run."
