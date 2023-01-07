@@ -55,7 +55,7 @@ const Carousel = ({ children, writing }) => {
           mb: 2,
           display: 'flex',
           flexDirection: 'column',
-          height: 400,
+          height: 370,
           overflow: 'hidden',
           overflowY: 'scroll'
         }}
