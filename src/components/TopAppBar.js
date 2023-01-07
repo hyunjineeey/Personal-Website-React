@@ -80,7 +80,7 @@ function TopAppBar () {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign='center'>
+                  <Typography textAlign='center' sx={{ textTransform: 'uppercase', fontSize: 14 }}>
                     <Link
                       style={{ textDecoration: 'none', color: 'black' }}
                       to={`/${page}`}
