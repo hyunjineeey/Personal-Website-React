@@ -33,11 +33,11 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   }
 }))
 
-function createData (q, n) {
+function createData(q, n) {
   return { q, n }
 }
 
-export default function QnATable () {
+export default function QnATable() {
   const { t } = useTranslation()
   const [show, setShow] = useState(false)
   const rows = [
@@ -55,7 +55,6 @@ export default function QnATable () {
     createData(t('qna:important.q'), t('qna:important.a')),
     createData(t('qna:scariest.q'), t('qna:scariest.a')),
     createData(t('qna:dream.q'), t('qna:dream.a')),
-    createData(t('qna:impressiveMoment.q'), t('qna:impressiveMoment.a')),
     createData(t('qna:eat.q'), t('qna:eat.a')),
     createData(t('qna:drone.q'), t('qna:drone.a')),
     createData(t('qna:phone.q'), t('qna:phone.a')),
