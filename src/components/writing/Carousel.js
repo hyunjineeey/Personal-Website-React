@@ -86,7 +86,7 @@ const Carousel = ({ children, writing }) => {
           />
         </button>
         <Typography sx={{ fontSize: '12px' }}>
-          {activeIndex + 1} / {size(writing.lines) + 1}
+          {activeIndex + 1} / {size(writing) + 1}
         </Typography>
         <button style={arrowStyle}>
           <ArrowForwardIcon

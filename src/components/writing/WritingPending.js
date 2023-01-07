@@ -7,13 +7,13 @@ import 'react-multi-carousel/lib/styles.css'
 import Footer from '../Footer'
 const writing = require('./writing.json')
 
-const Writing = () => {
+const WritingPending = () => {
   return (
     <Box sx={{ textAlign: 'center' }}>
       <Box sx={{ ml: 3, mr: 3 }}>
-        <Carousel writing={writing.lines}>
+        <Carousel writing={writing.pending}>
           <CarouselItem>{writing.main}</CarouselItem>
-          {map(writing.lines, (line) => (
+          {map(writing.pending, (line) => (
             <CarouselItem>{line}</CarouselItem>
           ))}
         </Carousel>
@@ -24,4 +24,4 @@ const Writing = () => {
   )
 }
 
-export default Writing
+export default WritingPending

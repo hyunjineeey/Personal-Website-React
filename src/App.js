@@ -12,6 +12,7 @@ import Testimonials from './components/testimonials/Testimonials'
 import Faq from './components/faq/Faq'
 import Books from './components/books/Books'
 import Writing from './components/writing/Writing'
+import WritingPending from './components/writing/WritingPending'
 import ScrollToTop from './components/ScrollToTop'
 
 function App () {
@@ -30,6 +31,7 @@ function App () {
         <Route path='faq' element={<Faq />} />
         <Route path='books' element={<Books />} />
         <Route path='writing' element={<Writing />} />
+        <Route path='writing-pending' element={<WritingPending />} />
       </Routes>
     </div>
   )
