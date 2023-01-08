@@ -56,7 +56,10 @@ export default function FaqAccordion () {
               {t('faq:pronounceName.question')}
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails sx={{
+            '& .MuiTypography-root': { fontSize: '0.9rem' }
+          }}
+          >
             <Typography sx={{ textAlign: 'left' }}>
               <Trans t={t} i18nKey='faq:pronounceName.answer'>
                 You can pronounce my name as
@@ -85,7 +88,11 @@ export default function FaqAccordion () {
               {t('faq:code.question')}
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails sx={{
+            '& .MuiTypography-root': { fontSize: '0.9rem' }
+          }}
+          >
+
             <Typography sx={{ textAlign: 'left' }}>
               <Trans t={t} i18nKey='faq:code.answer'>
                 I believe that coding can change the world. There are many
@@ -110,7 +117,10 @@ export default function FaqAccordion () {
               {t('faq:hobby.question')}
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails sx={{
+            '& .MuiTypography-root': { fontSize: '0.9rem' }
+          }}
+          >
             <Typography sx={{ textAlign: 'left' }}>
               <Trans t={t} i18nKey='faq:hobby.answer'>
                 It might sound cliché, but I like to read
