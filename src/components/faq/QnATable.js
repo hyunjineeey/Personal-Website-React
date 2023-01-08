@@ -51,11 +51,11 @@ export default function QnATable () {
     createData(t('qna:love.q'), t('qna:love.a')),
     createData(t('qna:hardestMoment.q'), t('qna:hardestMoment.a')),
     createData(t('qna:twenty.q'), t('qna:twenty.a')),
-    createData(t('qna:wish.q'), t('qna:wish.a')),
     createData(t('qna:important.q'), t('qna:important.a')),
     createData(t('qna:scariest.q'), t('qna:scariest.a')),
     createData(t('qna:dream.q'), t('qna:dream.a')),
     createData(t('qna:eat.q'), t('qna:eat.a')),
+    createData(t('qna:wish.q'), t('qna:wish.a')),
     createData(t('qna:drone.q'), t('qna:drone.a')),
     createData(t('qna:phone.q'), t('qna:phone.a')),
     createData(t('qna:wallpaper.q'), t('qna:wallpaper.a')),
@@ -126,7 +126,7 @@ export default function QnATable () {
               😉
             </Typography>
             <TableContainer component={Paper}>
-              <Table aria-label='customized table'>
+              <Table size='small' aria-label='customized table'>
                 <TableHead>
                   <TableRow>
                     <StyledTableCell>{t('qna:question')}</StyledTableCell>
