@@ -28,7 +28,7 @@ function TopAppBar () {
     localStorage.setItem('lng', lng)
   }
   return (
-    <AppBar position='fixed'>
+    <AppBar position='fixed' sx={{ background: '#2E3B55' }}>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
           <Typography
