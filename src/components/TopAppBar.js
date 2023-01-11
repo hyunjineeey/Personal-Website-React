@@ -132,9 +132,9 @@ function TopAppBar () {
               <div
                 onClick={() => changeLanguage('kr')}
                 className='fi fi-kr'
-                style={{ marginRight: 5 }}
+                style={{ marginRight: 7, fontSize: '17px' }}
               />
-              <div onClick={() => changeLanguage('us')} className='fi fi-us' />
+              <div onClick={() => changeLanguage('us')} className='fi fi-us' style={{ fontSize: '17px' }} />
             </IconButton>
           </Box>
         </Toolbar>
