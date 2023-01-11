@@ -46,7 +46,7 @@ function Main () {
             m: 2,
             fontSize: '30px',
             letterSpacing: '3px',
-            color: '#4b7dc4',
+            color: '#2E3B55',
             fontWeight: 'bold'
           }}
         >
