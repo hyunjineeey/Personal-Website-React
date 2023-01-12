@@ -12,7 +12,7 @@ const WritingPending = () => {
     <Box sx={{ textAlign: 'center' }}>
       <Box sx={{ ml: 3, mr: 3 }}>
         <Carousel writing={writing.pending}>
-          <CarouselItem>{writing.main}</CarouselItem>
+          <CarouselItem>Pending</CarouselItem>
           {map(writing.pending, (line) => (
             <CarouselItem>{line}</CarouselItem>
           ))}
