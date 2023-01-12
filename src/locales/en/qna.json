@@ -33,7 +33,7 @@
   },
   "food": {
     "q": "Favorite food?",
-    "a": "Taco"
+    "a": "Tonkatsu"
   },
   "love": {
     "q": "What's love for you?",
@@ -45,7 +45,7 @@
   },
   "worried": {
     "q": "Are you worried about something?",
-    "a": "I couldn't sleep"
+    "a": "My eyes hurt and I'm worried about getting worse"
   },
   "wish": {
     "q": "Do you have a wish?",
@@ -93,7 +93,7 @@
   },
   "song": {
     "q": "Which song are you listening to recently?",
-    "a": "Running on my mind"
+    "a": "Monster by Shawn & Justin"
   },
   "drone": {
     "q": "Do you want anything?",
@@ -101,7 +101,7 @@
   },
   "dream": {
     "q": "The most recent dream you had?",
-    "a": "I said I couldn't sleep well!"
+    "a": "None bc I couldn't sleep well"
   },
   "phone": {
     "q": "What phone do you use?",
@@ -153,7 +153,7 @@
   },
   "beefORpork": {
     "q": "Beef Vs Pork?",
-    "a": "Pork belly is the best"
+    "a": "Pork"
   },
   "meatORkimchi": {
     "q": "Meat dumplings Vs Kimchi dumplings",
