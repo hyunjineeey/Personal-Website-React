@@ -44,24 +44,28 @@ export default function QnATable () {
     createData(t('qna:dateOfBirth.q'), t('qna:dateOfBirth.a')),
     createData(t('qna:religion.q'), t('qna:religion.a')),
     createData(t('qna:mbti.q'), t('qna:mbti.a')),
+    createData(t('qna:nickname.q'), t('qna:nickname.a')),
+    createData(t('qna:color.q'), t('qna:color.a')),
     createData(t('qna:food.q'), t('qna:food.a')),
+    createData(t('qna:fruit.q'), t('qna:fruit.a')),
     createData(t('qna:netflix.q'), t('qna:netflix.a')),
     createData(t('qna:song.q'), t('qna:song.a')),
-    createData(t('qna:worried.q'), t('qna:worried.a')),
-    createData(t('qna:love.q'), t('qna:love.a')),
-    createData(t('qna:hardestMoment.q'), t('qna:hardestMoment.a')),
     createData(t('qna:twenty.q'), t('qna:twenty.a')),
+    createData(t('qna:makeHappy.q'), t('qna:makeHappy.a')),
+    createData(t('qna:makeCry.q'), t('qna:makeCry.a')),
     createData(t('qna:important.q'), t('qna:important.a')),
     createData(t('qna:scariest.q'), t('qna:scariest.a')),
-    createData(t('qna:dream.q'), t('qna:dream.a')),
     createData(t('qna:eat.q'), t('qna:eat.a')),
+    createData(t('qna:worried.q'), t('qna:worried.a')),
     createData(t('qna:wish.q'), t('qna:wish.a')),
     createData(t('qna:drone.q'), t('qna:drone.a')),
+    createData(t('qna:love.q'), t('qna:love.a')),
     createData(t('qna:phone.q'), t('qna:phone.a')),
     createData(t('qna:wallpaper.q'), t('qna:wallpaper.a')),
+    createData(t('qna:call.q'), t('qna:call.a')),
     createData(t('qna:tmi.q'), t('qna:tmi.a')),
     createData(t('qna:happy.q'), t('qna:happy.a')),
-    createData(t('qna:fragrance.q'), t('qna:fragrance.a')),
+    createData(t('qna:hardestMoment.q'), t('qna:hardestMoment.a')),
     createData(t('qna:mavic.q'), t('qna:mavic.a')),
     createData(t('qna:callORtext.q'), t('qna:callORtext.a')),
     createData(t('qna:summerORwinter.q'), t('qna:summerORwinter.a')),
@@ -74,22 +78,23 @@ export default function QnATable () {
     createData(t('qna:pizzaORchicken.q'), t('qna:pizzaORchicken.a')),
     createData(t('qna:kimichORsoy.q'), t('qna:kimichORsoy.a')),
     createData(t('qna:hotpot.q'), t('qna:hotpot.a')),
-    createData(
-      t('qna:night.q'),
-      <Trans t={t} i18nKey='qna:night.a'>
-        Writing
-        <a
-          href='./writing'
-          style={{
-            textDecoration: 'none',
-            color: '#1876d1'
-          }}
-          rel='noreferrer'
-        >
-          my feelings down
-        </a>
-      </Trans>
-    ),
+    createData(t('qna:night.q'), t('qna:night.a')),
+    // createData(
+    //   t('qna:night.q'),
+    //   <Trans t={t} i18nKey='qna:night.a'>
+    //     Writing
+    //     <a
+    //       href='./writing'
+    //       style={{
+    //         textDecoration: 'none',
+    //         color: '#1876d1'
+    //       }}
+    //       rel='noreferrer'
+    //     >
+    //       my feelings down
+    //     </a>
+    //   </Trans>
+    // ),
     createData(t('qna:morning.q'), t('qna:morning.a')),
     createData(t('qna:peopleTalk.q'), t('qna:peopleTalk.a')),
     createData(t('qna:goodAt.q'), t('qna:goodAt.a')),

@@ -97,7 +97,7 @@ const Carousel = ({ children, writing }) => {
           />
         </button>
       </div>
-      <Typography sx={{ mt: -1, mb: 1, fontSize: '12px' }}>최신순 • 매주 일요일 업로드</Typography>
+      <Typography sx={{ mt: -1, mb: 1, fontSize: '12px' }}>최신순</Typography>
     </div>
   )
 }

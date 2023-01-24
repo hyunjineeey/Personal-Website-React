@@ -12,8 +12,12 @@
     "a": "Irreligion"
   },
   "memorableEvent": {
-    "q": "The most memorable moment?",
+    "q": "The most memorable moment recently?",
     "a": "Summer 2022"
+  },
+  "color": {
+    "q": "Favorite color?",
+    "a": "Black"
   },
   "netflix": {
     "q": "Favorite netflix series?",
@@ -45,7 +49,7 @@
   },
   "worried": {
     "q": "Are you worried about something?",
-    "a": "My eyes hurt and I'm worried about getting worse"
+    "a": "I couldn't sleep well"
   },
   "wish": {
     "q": "Do you have a wish?",
@@ -93,15 +97,11 @@
   },
   "song": {
     "q": "Which song are you listening to recently?",
-    "a": "Remedy by Ali Gatie"
+    "a": "Time by NF"
   },
   "drone": {
     "q": "Do you want anything?",
     "a": "Drone"
-  },
-  "dream": {
-    "q": "The most recent dream you had?",
-    "a": "None bc I couldn't sleep well"
   },
   "phone": {
     "q": "What phone do you use?",
@@ -189,10 +189,22 @@
   },
   "makeHappy": {
     "q": "What makes you happy?",
-    "a": "When people I love are happy"
+    "a": "Love"
   },
   "makeCry": {
     "q": "What makes you cry?",
-    "a": "I cry all the time bc my eyes hurt"
+    "a": "Love"
+  },
+  "call": {
+    "q": "Who did you call recently?",
+    "a": "Dad"
+  },
+  "nickname": {
+    "q": "Nickname?",
+    "a": "Jiny"
+  },
+  "fruit": {
+    "q": "Favorite fruit?",
+    "a": "Peach"
   }
 }

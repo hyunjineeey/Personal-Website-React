@@ -52,7 +52,7 @@ function Main () {
         >
           {t('shared:hyunjin')}
         </Typography>
-        <Typography>Frontend Engineer at Sentera</Typography>
+        <Typography>Software Engineer at Sentera</Typography>
         <Typography>Living in St Paul, Minnesota</Typography>
         <Typography>Born and Raised in Seoul, South Korea</Typography>
         <Box display='flex' gap={1} sx={{ mt: 3 }}>
