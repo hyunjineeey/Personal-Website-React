@@ -78,23 +78,23 @@ export default function QnATable () {
     createData(t('qna:pizzaORchicken.q'), t('qna:pizzaORchicken.a')),
     createData(t('qna:kimichORsoy.q'), t('qna:kimichORsoy.a')),
     createData(t('qna:hotpot.q'), t('qna:hotpot.a')),
-    createData(t('qna:night.q'), t('qna:night.a')),
-    // createData(
-    //   t('qna:night.q'),
-    //   <Trans t={t} i18nKey='qna:night.a'>
-    //     Writing
-    //     <a
-    //       href='./writing'
-    //       style={{
-    //         textDecoration: 'none',
-    //         color: '#1876d1'
-    //       }}
-    //       rel='noreferrer'
-    //     >
-    //       my feelings down
-    //     </a>
-    //   </Trans>
-    // ),
+    // createData(t('qna:night.q'), t('qna:night.a')),
+    createData(
+      t('qna:night.q'),
+      <Trans t={t} i18nKey='qna:night.a'>
+        Writing
+        <a
+          href='./writing'
+          style={{
+            textDecoration: 'none',
+            color: '#1876d1'
+          }}
+          rel='noreferrer'
+        >
+          my feelings down
+        </a>
+      </Trans>
+    ),
     createData(t('qna:morning.q'), t('qna:morning.a')),
     createData(t('qna:peopleTalk.q'), t('qna:peopleTalk.a')),
     createData(t('qna:goodAt.q'), t('qna:goodAt.a')),
