@@ -152,12 +152,6 @@ export default function QnATable () {
             </TableContainer>
           </>
         )}
-        <Typography
-          variant='subtitle2'
-          sx={{ mt: 2, mb: -1, textAlign: 'left', fontStyle: 'italic' }}
-        >
-          {t('shared:lastUpdated')}: {t('shared:faqLastUpdated')}
-        </Typography>
       </Box>
     </Box>
   )

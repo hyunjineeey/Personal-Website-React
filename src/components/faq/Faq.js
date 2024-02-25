@@ -9,9 +9,10 @@ const Faq = () => {
   return (
     <Box sx={{ textAlign: 'center' }}>
       <Accordion />
-      <QnATable />
+      {/* <QnATable /> */}
       <Footer />
     </Box>
+
   )
 }
 
