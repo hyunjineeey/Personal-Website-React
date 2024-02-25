@@ -52,9 +52,10 @@ function Main () {
         >
           {t('shared:hyunjin')}
         </Typography>
-        <Typography>Software Engineer at Sentera</Typography>
-        <Typography>Living in St Paul, Minnesota</Typography>
-        <Typography>Born and Raised in Seoul, South Korea</Typography>
+        <Typography>Software Engineer</Typography>
+        <Typography>Living in Seoul, South Korea</Typography>
+        {/* <Typography>Living in St Paul, Minnesota</Typography>
+        <Typography>Born and Raised in Seoul, South Korea</Typography> */}
         <Box display='flex' gap={1} sx={{ mt: 3 }}>
           <SnsButton
             link={email}
